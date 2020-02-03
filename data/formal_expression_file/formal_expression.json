@@ -1,4 +1,4 @@
-[{"config1": {"Spatial_Entity": {"SPT1": {"text": "circle", "quantity": "a"}, "SPL1": {"text": "box.", "area": "a corner of", "quantity": "a"}, "SPI1": {"text": "touching", "metric": "closely"}}, "Type": "TOP:TPP"}},
+{"config1": {"Spatial_Entity": {"SPT1": {"text": "circle", "quantity": "a"}, "SPL1": {"text": "box.", "area": "a corner of", "quantity": "a"}, "SPI1": {"text": "touching", "metric": "closely"}}, "Type": "TOP:TPP"}},
 {"config1": {"Spatial_Entity": {"SPT1": {"text": "tower", "quantity": "at least one"}, "SPL1": {"text": "blocks.", "quantity": "exactly three"}, "SPI1": {"text": "with"}}, "Type": "TOP:TPP"}},
 {"config1": {"Spatial_Entity": {"SPT1": {"text": "box", "quantity": "1"}, "SPL1": {"text": "items.", "quantity": "5", "color": "yellow"}, "SPI1": {"text": "with"}}, "Type": "TOP:TPP"}},
 {"config1": {"Spatial_Entity": {"SPT1": {"text": "box", "quantity": "a"}, "SPL1": {"text": "square", "quantity": "only one"}, "SPI1": {"text": "with"}}, "Type": "TOP:TPP"}, "config2": {"Spatial_Entity": {"SPT2": {"text": "square"}, "SPL2": {"text": "wall."}, "SPI2": {"text": "touching"}}, "Type": "TOP:EC"}},
@@ -7,5 +7,4 @@
 {"config1": {"Spatial_Entity": {"SPT1": {"text": "tower", "quantity": "exactly one"}, "SPL1": {"text": "block", "quantity": "a", "color": "black"}, "SPI1": {"text": "with"}}}},
 {"config1": {"Spatial_Entity": {"SPT1": {"text": "circle", "quantity": "exactly one", "color": "black"}, "SPL1": {"text": "edge."}, "SPI1": {"text": "not touching"}}, "Type": "TOP:DC"}},
 {"config1": {"Spatial_Entity": {"SPT1": {"text": "block", "quantity": "a", "color": "yellow"}, "SPL1": {"text": "block.", "quantity": "a", "color": "black"}, "SPI1": {"text": "above"}}, "Type": "DIR:Above"}},
-{"config1": {"Spatial_Entity": {"SPT1": {"text": "square", "color": "grey"}, "SPL1": {"text": "objects.", "quantity": "exactly five"}, "SPI1": {"text": "contains"}}, "Type": "TOP:TPP"}}
-]
+{"config1": {"Spatial_Entity": {"SPT1": {"text": "square", "color": "grey"}, "SPL1": {"text": "objects.", "quantity": "exactly five"}, "SPI1": {"text": "contains"}}, "Type": "TOP:TPP"}},
