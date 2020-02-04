@@ -1,0 +1,12 @@
+[
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"circle", "quantity":"1"}, "SPI1":{"text":"touching", "metric": "closely"}, "SPL1":{"text":"box", "quantity":"1", "area":"a corner of"}}}},
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"tower", "quantity":"at least one"}, "SPI1":{"text":"with"}, "SPL1":{"text":"blocks", "quantity":"three"}}}},
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"box", "quantity":"1"}, "SPI1":{"text":"with"}, "SPL1":{"text":"items", "quantity":"5","color":"yellow"}}}},
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"box", "quantity":"a"}, "SPI1":{"text":"with"}, "SPL1":{"text":"square", "quantity":"only one"}}},"Config2":{"Type":"TOP:EC","Spatial_Entity": {"SPT2":"SPL1", "SPI2":{"text":"touching"}, "SPL2":{"text":"wall"}}}},
+    {"Config1":{"Type":"TOP:EC","Spatial_Entity": {"SPT1":{"text":"triangle", "quantity":"a","color":"blue"}, "SPI1":{"text":"touching"}, "SPL1":{"text":"wall", "area":"side"}}}},
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"box", "quantity":"at least one","color":"grey"}, "SPI1":{"text":"with"}, "SPL1":{"text":"objects", "quantity":"exactly three"}}}},
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"tower", "quantity":"exactly one"}, "SPI1":{"text":"with"}, "SPL1":{"text":"block", "color":"black", "quantity":"a", "area":"at the top"}}}},
+    {"Config1":{"Type":"TOP:DC","Spatial_Entity": {"SPT1":{"text":"circle", "quantity":"exactly one","color":"black"}, "SPI1":{"text":"not touching"}, "SPL1":{"text":"edge"}}}},
+    {"Config1":{"Type":"DIR:ABOVE","Spatial_Entity": {"SPT1":{"text":"block", "quantity":"a","color":"yellow"}, "SPI1":{"text":"above"}, "SPL1":{"text":"block", "color":"black","quantity":"a"}}}},
+    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"square", "quantity":"one","color":"grey"}, "SPI1":{"text":"contains"}, "SPL1":{"text":"objects","quantity":"exactly five"}}}}
+]
