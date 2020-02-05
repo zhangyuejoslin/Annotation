@@ -2,47 +2,47 @@
 Ontology:
 Direction, TOPOLOGY
 '''
-'''
-Direction
-'''
-def is_above(x1, x2, y1, y2):
-    return True if y1 > y2 else False
+# '''
+# Direction
+# '''
+# def is_above(x1, x2, y1, y2):
+#     return True if y1 < y2 else False
 
-def is_below(x1, x2, y1, y2):
-    return True if y1 < y2 else False
+# def is_below(x1, x2, y1, y2):
+#     return True if y1 > y2 else False
 
-def is_left(x1, x2, y1, y2):
-    return True if x1 < x2 else False
+# def is_left(x1, x2, y1, y2):
+#     return True if x1 < x2 else False
 
-def is_right(x1, x2, y1, y2):
-    return True if x1 > x2 else False
+# def is_right(x1, x2, y1, y2):
+#     return True if x1 > x2 else False
 
-# in fact, in 2d-image, it is unnecessary.
-def is_front(x1, x2, y1, y2):
-    return True if y1 < y2 else False
+# # in fact, in 2d-image, it is unnecessary.
+# def is_front(x1, x2, y1, y2):
+#     return True if y1 < y2 else False
 
-def is_back(x1, x2, y1, y2):
-    return True if y1 < y2 else False
+# def is_back(x1, x2, y1, y2):
+#     return True if y1 < y2 else False
 
-'''
-TOPOLOGY:
-Externally connected (EC), 
-Disconnected (DC), 
-Proper part (PP), like contain, box with sth.
-'''
-def is_ec(x1, x2, size_1, y1, y2, size_2):
-    return True if ( (x1+size_1) == x2 ) or ( (x1-size_1) == x2 ) or\
-                   ((y1 + size_1) == y2) or ( (y1 - size_1) == y2 ) else False
+# '''
+# TOPOLOGY:
+# Externally connected (EC), 
+# Disconnected (DC), 
+# Proper part (PP), like contain, box with sth.
+# '''
+# def is_ec(x1, x2, size_1, y1, y2, size_2):
+#     return True if ( (x1+size_1) == x2 ) or ( (x1-size_1) == x2 ) or\
+#                    ((y1 + size_1) == y2) or ( (y1 - size_1) == y2 ) else False
 
-def is_dc(x1, x2, size_1, y1, y2, size_2):
-    return True if ((x1 + size_1) != x2) or ((x1 - size_1) != x2) or \
-                   ((y1 + size_1) != y2) or ((y1 - size_1) != y2) else False
+# def is_dc(x1, x2, size_1, y1, y2, size_2):
+#     return True if ((x1 + size_1) != x2) or ((x1 - size_1) != x2) or \
+#                    ((y1 + size_1) != y2) or ((y1 - size_1) != y2) else False
 
-def is_tpp(x1, x2, y1, y2, keyword): # touch pp
-    return True if y1 < y2 else False
+# def is_tpp(x1, x2, y1, y2, keyword): # touch pp
+#     return True if y1 < y2 else False
 
-def is_ntpp(x1, x2, y1, y2, keyword): # not touch pp
-    return True if y1 < y2 else False
+# def is_ntpp(x1, x2, y1, y2, keyword): # not touch pp
+#     return True if y1 < y2 else False
 
 
 '''

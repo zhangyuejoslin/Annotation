@@ -1,5 +1,5 @@
 [
-    {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"circle", "quantity":"1"}, "SPI1":{"text":"touching", "metric": "closely"}, "SPL1":{"text":"box", "quantity":"1", "area":"a corner of"}}}},
+    {"Config1":{"Type":"TOP:DC","Spatial_Entity": {"SPT1":{"text":"circle", "quantity":"1"}, "SPI1":{"text":"touching", "metric": "closely"}, "SPL1":{"text":"box", "quantity":"1", "area":"a corner of"}}}},
     {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"tower", "quantity":"at least one"}, "SPI1":{"text":"with"}, "SPL1":{"text":"blocks", "quantity":"three"}}}},
     {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"box", "quantity":"1"}, "SPI1":{"text":"with"}, "SPL1":{"text":"items", "quantity":"5","color":"yellow"}}}},
     {"Config1":{"Type":"TOP:TPP","Spatial_Entity": {"SPT1":{"text":"box", "quantity":"a"}, "SPI1":{"text":"with"}, "SPL1":{"text":"square", "quantity":"only one"}}},"Config2":{"Type":"TOP:EC","Spatial_Entity": {"SPT2":"SPL1", "SPI2":{"text":"touching"}, "SPL2":{"text":"wall"}}}},

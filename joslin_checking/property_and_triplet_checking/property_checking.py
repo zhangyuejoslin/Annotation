@@ -1,3 +1,4 @@
+from property_and_triplet_checking import property_and_triplet_vocab
 '''
 block also means one of triangle, circle and square.
 '''
@@ -9,27 +10,12 @@ def remove_s_es(word):
         return word[0: len(word)-1]
     return word
 
-def entity_default():
-    return ['one', 'top', 'box', 'ones', 'side', 'other', 'block', 'towers', 'edge', 'item', 'line', 'blocks', 'objects', 'items', 'together', 'corner', 'each', 'tower', 'base', 'it', 'its', 'objects', 'object', 'boxes', 'wall']
 
 
 '''
 Spatial Properties: 
 Color, Quantity, Shape, Size, Orientation, metric, Area
 '''
-# def trajactor_or_landmark_check(form, unit_input, stru_rep):
-#     cur_text = remove_s_es(unit_input.get('text'))
-#     is_text_correct = 1 if check_text(form, unit_input.get('text', 'None'), stru_rep) == 1 else 0
-#     is_color_correct = 1 if check_color(form, unit_input.get('color', 'None'), stru_rep, cur_text) == 1 else 0
-#     is_shape_correct = 1 if check_shape(form, unit_input.get('shape', 'None'), stru_rep, cur_text) == 1 else 0
-#     is_size_correct = 1 if check_size(form, unit_input.get('size', 'None'), stru_rep, cur_text) == 1 else 0
-#     is_area_correct = 1 if check_area(form, unit_input.get('area', 'None'), stru_rep, cur_text) == 1 else 0
-#     is_quantity_correct = 1 if check_quantity(form, unit_input.get('quantity', 'None'), stru_rep, cur_text) == 1 else 0
-#     res = is_text_correct + is_color_correct + is_shape_correct + is_size_correct + is_area_correct + is_quantity_correct
-#     if res == 6:
-#         return 1
-#     else: 
-#         return 0
 
 def trajactor_or_landmark_check(form, unit_input, stru_rep): # output: return the corresponding kb x_loc anc y_loc
     result = []
@@ -40,8 +26,8 @@ def trajactor_or_landmark_check(form, unit_input, stru_rep): # output: return th
         if sr['type'] == unit_input['text'] \
             and ( sr['color'].lower()==unit_input['color'] or unit_input['color']=='None' ) \
             and ( compute_size(sr['size']) == unit_input['size'] or unit_input['size']=='None' ):
-                result.append([unit_input['text'], sr['x_loc'], sr['y_loc']])
-        elif unit_input['text'] in entity_default():
+                result.append([unit_input['text'], sr['x_loc'], sr['y_loc'], sr['size']])
+        elif unit_input['text'] in property_and_triplet_vocab.entity_default():
             if unit_input['color'] == sr['color'].lower():
                 result.append([unit_input['text'], sr['x_loc'], sr['y_loc']])
             elif unit_input['color']=='None':
@@ -49,7 +35,6 @@ def trajactor_or_landmark_check(form, unit_input, stru_rep): # output: return th
 
     if unit_input['quantity'] != 'None' and len(result) < unit_input['quantity']: # check whether the quantity is correct.
         result = []
-    print(result)
     return result
 
 def prop_check(form, config, stru_rep):
@@ -61,7 +46,6 @@ def prop_check(form, config, stru_rep):
     #     lm = form['Config'+lm[-1]]['Spatial_Entity'][lm]
     is_tr_correct = trajactor_or_landmark_check(form, tr, stru_rep)
     is_lm_correct = trajactor_or_landmark_check(form, lm, stru_rep)
-    print('--------------------------------------')
     return dict(tr=is_tr_correct, lm=is_lm_correct)
 
 def check_text(form, text, sr):
@@ -69,7 +53,7 @@ def check_text(form, text, sr):
     #     text = form['Config'+text[-1]]['Spatial_Entity'][text]['text']
     #     print(text)
     text = remove_s_es(text)
-    if text == 'None' or text in entity_default():
+    if text == 'None' or text in property_and_triplet_vocab.entity_default():
         return 1
     else:
         for d in sr:
