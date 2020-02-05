@@ -19,7 +19,9 @@ Color, Quantity, Shape, Size, Orientation, metric, Area
 
 def trajactor_or_landmark_check(form, unit_input, stru_rep): # output: return the corresponding kb x_loc anc y_loc
     result = []
+    tower_result = []
     for sr in stru_rep:
+        # tower_result.append((sr['x_loc']))
         sr['color'] = 'blue' if sr['color'] == '#0099ff' else sr['color'].lower()
         unit_input['text'] = 'box' if unit_input['color'] == 'grey' else unit_input['text']
         unit_input['color'] = 'None' if unit_input['color'] == 'grey' else unit_input['color']
@@ -27,11 +29,18 @@ def trajactor_or_landmark_check(form, unit_input, stru_rep): # output: return th
             and ( sr['color'].lower()==unit_input['color'] or unit_input['color']=='None' ) \
             and ( compute_size(sr['size']) == unit_input['size'] or unit_input['size']=='None' ):
                 result.append([unit_input['text'], sr['x_loc'], sr['y_loc'], sr['size']])
+
+        # maybe next step of work to text "tower"
         elif unit_input['text'] in property_and_triplet_vocab.entity_default():
             if unit_input['color'] == sr['color'].lower():
                 result.append([unit_input['text'], sr['x_loc'], sr['y_loc']])
             elif unit_input['color']=='None':
                 result.append([unit_input['text']])
+
+    if len(set(tower_result)) == len(tower_result):
+        result = []
+        return result
+
 
     if unit_input['quantity'] != 'None' and len(result) < unit_input['quantity']: # check whether the quantity is correct.
         result = []

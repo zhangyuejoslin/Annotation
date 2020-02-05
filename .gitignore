@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+download_mp.py
+venv/
+*.pyc
