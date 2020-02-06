@@ -20,30 +20,33 @@ Color, Quantity, Shape, Size, Orientation, metric, Area
 def trajactor_or_landmark_check(form, unit_input, stru_rep): # output: return the corresponding kb x_loc anc y_loc
     result = []
     tower_result = []
+    x_position = []
     for sr in stru_rep:
-        # tower_result.append((sr['x_loc']))
+
         sr['color'] = 'blue' if sr['color'] == '#0099ff' else sr['color'].lower()
         unit_input['text'] = 'box' if unit_input['color'] == 'grey' else unit_input['text']
         unit_input['color'] = 'None' if unit_input['color'] == 'grey' else unit_input['color']
         if sr['type'] == unit_input['text'] \
-            and ( sr['color'].lower()==unit_input['color'] or unit_input['color']=='None' ) \
-            and ( compute_size(sr['size']) == unit_input['size'] or unit_input['size']=='None' ):
+            and (sr['color'].lower()==unit_input['color'] or unit_input['color']=='None' ) \
+            and (compute_size(sr['size']) == unit_input['size'] or unit_input['size']=='None' ):
                 result.append([unit_input['text'], sr['x_loc'], sr['y_loc'], sr['size']])
 
-        # maybe next step of work to text "tower"
+        elif unit_input['text'] in property_and_triplet_vocab.tower_word:
+            x_position.append(sr['x_loc'])
+            tower_result.append([unit_input['text'], sr['x_loc'], sr['y_loc'], sr['size']])
+
         elif unit_input['text'] in property_and_triplet_vocab.entity_default():
             if unit_input['color'] == sr['color'].lower():
-                result.append([unit_input['text'], sr['x_loc'], sr['y_loc']])
+                result.append([unit_input['text'], sr['x_loc'], sr['y_loc'], sr['size']])
             elif unit_input['color']=='None':
                 result.append([unit_input['text']])
 
-    if len(set(tower_result)) == len(tower_result):
-        result = []
-        return result
-
+    if len(set(x_position)) == 1:
+        result = tower_result
 
     if unit_input['quantity'] != 'None' and len(result) < unit_input['quantity']: # check whether the quantity is correct.
         result = []
+
     return result
 
 def prop_check(form, config, stru_rep):
@@ -55,6 +58,7 @@ def prop_check(form, config, stru_rep):
     #     lm = form['Config'+lm[-1]]['Spatial_Entity'][lm]
     is_tr_correct = trajactor_or_landmark_check(form, tr, stru_rep)
     is_lm_correct = trajactor_or_landmark_check(form, lm, stru_rep)
+
     return dict(tr=is_tr_correct, lm=is_lm_correct)
 
 def check_text(form, text, sr):

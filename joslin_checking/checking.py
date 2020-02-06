@@ -17,6 +17,7 @@ def check(src_data, img_data):
             ### config_1 to config_n
             for config in form.keys():
 
+
                 prop_check = pc.prop_check(form, config, stru_rep)
                 rel_check = tc.rel_check(form, config, stru_rep, prop_check)
 
@@ -27,18 +28,17 @@ def check(src_data, img_data):
             if rel_corrct == 1:
                 final_correct = 1
                 break
+
         if final_correct == 1:
             print('Prediction: True ','Label: ', base['label'] )
         else:
             # print('False')
             print('Prediction: False ', 'Label: ', base['label'])
 
-        # import sys
-        # sys.exit()
     return 0
 
 
 if __name__ == '__main__':
-    src_data, img_data = data_pp.read_source_data('data/check_temp.json', 'data/check_image_feature.json')
+    src_data, img_data = data_pp.read_source_data('data/tmp.json', 'data/image_representation.json')
     res = check(src_data, img_data)
 

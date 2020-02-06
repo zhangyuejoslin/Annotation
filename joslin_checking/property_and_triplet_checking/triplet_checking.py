@@ -84,7 +84,6 @@ def compute_ec(form, config, tr, lm, ind, stru_rep, prop_check):
 def compute_dc(form, config, tr, lm, ind, stru_rep, prop_check):
     tr_props = merge_same_list_to_one(prop_check['tr'])
     lm_props = merge_same_list_to_one(prop_check['lm'])
-    # print(tr_props, lm_props)
 
     if tr_props == [] or lm_props == []:
         return False
@@ -104,24 +103,35 @@ def compute_dc(form, config, tr, lm, ind, stru_rep, prop_check):
 def compute_tpp(form, config, tr, lm, ind, stru_rep, prop_check):
     tr_props = merge_same_list_to_one(prop_check['tr'])
     lm_props = merge_same_list_to_one(prop_check['lm'])
-    print(tr_props)
-    print(lm_props)
+    # print(tr_props)
+    # print(lm_props)
+
     if tr_props == [] or lm_props == []:
         return False
+
     elif lm_props[0] in property_and_triplet_vocab.side_word or lm_props[0] in property_and_triplet_vocab.box_word:
         for tr_prop in tr_props:
             if tpp_formula(tr_prop[1], tr_prop[2], tr_prop[3], 0, 0, 100):
                 return True
-            # elif tpp_formula(tr_prop[1], tr_prop[2], tr_prop[3], 100, 100, 0)==True:
-            #     return False
             else:
                 return False
+    elif lm_props[0][0] in property_and_triplet_vocab.tower_word or tr_props[0][0] in property_and_triplet_vocab.tower_word:
+        for tr_prop in tr_props:
+            #80 sould be changed here
+            if tpp_formula(tr_prop[1], tr_prop[2], tr_prop[3], 0, 0, 80):
+                return True
+            # elif len(lm_props) != 0:
+            #     return True
+            else:
+                return False
+
     elif tr_props[0] in property_and_triplet_vocab.box_word:
         if len(prop_check['lm']) == int(form[config]['Spatial_Entity']['SPL'+str(config[-1])]['quantity']):
             return True
     elif tr_props[0] in property_and_triplet_vocab.tower_word:
         if len(prop_check['lm']) == int(form[config]['Spatial_Entity']['SPL'+str(config[-1])]['quantity']):
             return True
+
     return False
 
 def compute_left(form, config, tr, lm, ind, stru_rep, prop_check):
@@ -187,7 +197,7 @@ def compute_above(form, config, tr, lm, ind, stru_rep, prop_check):
 def compute_below(form, config, tr, lm, ind, stru_rep, prop_check):
     tr_props = merge_same_list_to_one(prop_check['tr'])
     lm_props = merge_same_list_to_one(prop_check['lm'])
-    # print(tr_props, lm_props)
+    #print(tr_props, lm_props)
 
     if tr_props == [] or lm_props == []:
         return False
@@ -217,7 +227,8 @@ def dc_formula(x1, y1, size1, x2, y2, size2):
         return True
 
 def tpp_formula(x1, y1, size1, x2, y2, size2):
-    if int(x1) == size1 or int(y1) == size1 or int(x1) + size1  == size2 or int(y1) + size1  == size2:
+
+    if int(x1) == size1 or int(y1) == size1 or int(x1) == size2 or int(y1) == size2 or int(x1) + size1  == size2 or int(y1) + size1  == size2:
         return True
     else:
         return False

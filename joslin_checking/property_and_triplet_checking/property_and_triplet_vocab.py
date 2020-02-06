@@ -15,7 +15,8 @@ less_word = ['at most', 'less than']
 ec_word = ['touch', 'touched', 'touches', 'attached', 'attached to',]
 
 def entity_default():
-    return ['one', 'top', 'box', 'ones', 'side', 'other', 'block', 'towers', 'edge', 'item', 'line', 'blocks', 'objects', 'items', 'together', 'corner', 'each', 'tower', 'base', 'it', 'its', 'objects', 'object', 'boxes', 'wall']
+    return ['one', 'top', 'box', 'ones', 'side', 'other', 'block', 'edge', 'item', 'line', 'blocks', 'objects', 'items', 'together', 'corner', 'each', 'tower', 'base', 'it', 'its', 'objects', 'object', 'boxes', 'wall']
+
 
 side_word = ['edge', 'side', 'corner', 'wall', 'base']
 box_word = ['box', 'boxes']
