@@ -11,9 +11,10 @@ touching, touch --> touch
 '''
 def read_source_data(form_path, image_path):
     source_data = json.load(open(form_path, 'r'))
+
     img_data = json.load(open(image_path, 'r'))
 
-    ### change source_data to the structure data
+    ### change source_data to the structure checked_data
     for form in source_data: # each sample
         for config in form.keys(): # each config in one sample
             # tr
@@ -33,13 +34,16 @@ def structure_formal_lang_tr_lm(form, config, flag):
     form[config]['Spatial_Entity'][flag+str(config[-1])]['color'] = 'blue' if form[config]['Spatial_Entity'][flag+str(config[-1])]['color'] == '#0099ff' else form[config]['Spatial_Entity'][flag+str(config[-1])]['color']
     form[config]['Spatial_Entity'][flag+str(config[-1])]['shape'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('shape', 'None')
     form[config]['Spatial_Entity'][flag+str(config[-1])]['size'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('size', 'None')
-    form[config]['Spatial_Entity'][flag+str(config[-1])]['compare'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('quantity', 1)
-    form[config]['Spatial_Entity'][flag+str(config[-1])]['quantity'] = preprocessing_quentity(form, config, flag)
+    if str(form[config]['Spatial_Entity'][flag+str(config[-1])].get('quantity', 1)).isdigit():
+        form[config]['Spatial_Entity'][flag + str(config[-1])]['compare'] = ''
+    else:
+        form[config]['Spatial_Entity'][flag+str(config[-1])]['compare'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('quantity', 1)
+    form[config]['Spatial_Entity'][flag+str(config[-1])]['quantity'] = preprocessing_quantity(form, config, flag)
     form[config]['Spatial_Entity'][flag+str(config[-1])]['orientation'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('orientation', 'None')
     form[config]['Spatial_Entity'][flag+str(config[-1])]['metric'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('metric', 'None')
     form[config]['Spatial_Entity'][flag+str(config[-1])]['area'] = form[config]['Spatial_Entity'][flag+str(config[-1])].get('area', 'None')
 
-def preprocessing_quentity(form, config, flag):
+def preprocessing_quantity(form, config, flag):
     ori = form[config]['Spatial_Entity'][flag+str(config[-1])].get('quantity', '1')
     ori = str(ori)
     spli = ori.split(' ')
@@ -48,6 +52,7 @@ def preprocessing_quentity(form, config, flag):
         ori = spli[-1]
     if spli[0] in property_and_triplet_vocab.exact_word:
         ori = spli[-1]
+
     if(len(spli))>2:
         if spli[0]+spli[1] == 'atmost':
             ori = 1
@@ -57,6 +62,8 @@ def preprocessing_quentity(form, config, flag):
             ori = spli[-1]
         elif spli[0]+spli[1] == 'lessthan':
             ori = 1
+        elif spli[0] == 'exactly':
+            ori = 0
     return int(ori)
 
 

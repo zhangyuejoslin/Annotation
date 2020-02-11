@@ -125,9 +125,9 @@ def form_representation_generation(each_sentence):
 
 
 if __name__ == '__main__':
-    with open("../data/webanno_file/NLVR4.json", 'r') as load_f:
+    with open("../checked_data/webanno_file/NLVR4.json", 'r') as load_f:
         load_dict = json.load(load_f)
-    with open("../data/formal_expression_file/formal_expression4.json", "w") as f:
+    with open("../checked_data/formal_expression_file/formal_expression4.json", "w") as f:
         for sentence in parsing(load_dict):
                   f.write(json.dumps(form_representation_generation(sentence)))
                   f.write(',')

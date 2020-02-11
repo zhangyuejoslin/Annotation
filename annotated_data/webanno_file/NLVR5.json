@@ -1,0 +1,311 @@
+{"_context" : {
+    "_types" : {
+      "DocumentMetaData" : {
+        "_feature_types" : {"sofa" : "_ref" } },
+      "FSArray" : { },
+      "Sentence" : {
+        "_feature_types" : {"sofa" : "_ref" } },
+      "Sofa" : {
+        "_feature_types" : {"sofaArray" : "_ref" } },
+      "Spatial_role_relation" : {
+        "_feature_types" : {"sofa" : "_ref",  "Dependent" : "_ref",  "Governor" : "_ref" } },
+      "Spatial_roles" : {
+        "_feature_types" : {"sofa" : "_ref",  "properties" : "_ref",  "spatial_entity" : "_ref" } },
+      "Spatial_rolesPropertiesLink" : {
+        "_feature_types" : {"target" : "_ref" } },
+      "Spatial_rolesSpatial_entityLink" : {
+        "_feature_types" : {"target" : "_ref" } },
+      "TagsetDescription" : {
+        "_feature_types" : {"sofa" : "_ref",  "tags" : "_ref" } },
+      "Token" : {
+        "_feature_types" : {"sofa" : "_ref",  "parent" : "_ref",  "lemma" : "_ref",  "stem" : "_ref",  "pos" : "_ref",  "morph" : "_ref",  "form" : "_ref" } },
+      "DocumentAnnotation" : {
+        "_feature_types" : {"sofa" : "_ref" },
+        "_subtypes" : ["DocumentMetaData" ] },
+      "Annotation" : {
+        "_feature_types" : {"sofa" : "_ref" },
+        "_subtypes" : ["DocumentAnnotation",  "Sentence",  "Spatial_role_relation",  "Spatial_roles",  "TagsetDescription",  "Token" ] },
+      "AnnotationBase" : {
+        "_feature_types" : {"sofa" : "_ref" },
+        "_subtypes" : ["Annotation" ] },
+      "TOP" : {
+        "_subtypes" : ["AnnotationBase",  "ArrayBase",  "Sofa",  "Spatial_rolesPropertiesLink",  "Spatial_rolesSpatial_entityLink" ] },
+      "ArrayBase" : {
+        "_subtypes" : ["FSArray" ] } } },
+  "_views" : {
+    "_InitialView" : {
+      "DocumentMetaData" : [
+        {"sofa" : 12,  "end" : 509,  "language" : "x-unspecified",  "documentTitle" : "NLVR5.txt",  "documentId" : "admin",  "documentUri" : "file:/Users/zhangyue/.webanno/repository/project/4/document/108/source/admin",  "collectionId" : "file:/Users/zhangyue/.webanno/repository/project/4/document/108/source/",  "documentBaseUri" : "file:/Users/zhangyue/.webanno/repository/project/4/document/108/source/",  "isLastSegment" : false } ],
+      "TagsetDescription" : [
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency",  "name" : "UD Universal Dependencies",  "input" : false },
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity",  "name" : "Named Entity tags",  "input" : false },
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.transform.type.SofaChangeAnnotation",  "name" : "Operation",  "input" : false },
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS",  "name" : "UD Universal POS tags",  "input" : false },
+        {"sofa" : 12,  "layer" : "webanno.custom.Spatial_role_relation",  "name" : "viewer",  "input" : false },
+        {"sofa" : 12,  "layer" : "webanno.custom.Spatial_roles",  "name" : "spatial_indicator",  "input" : false } ],
+      "Sentence" : [
+        {"sofa" : 12,  "end" : 53 },
+        {"sofa" : 12,  "begin" : 54,  "end" : 120 },
+        {"sofa" : 12,  "begin" : 121,  "end" : 177 },
+        {"sofa" : 12,  "begin" : 178,  "end" : 219 },
+        {"sofa" : 12,  "begin" : 220,  "end" : 271 },
+        {"sofa" : 12,  "begin" : 272,  "end" : 320 },
+        {"sofa" : 12,  "begin" : 321,  "end" : 361 },
+        {"sofa" : 12,  "begin" : 362,  "end" : 405 },
+        {"sofa" : 12,  "begin" : 406,  "end" : 459 },
+        {"sofa" : 12,  "begin" : 460,  "end" : 509 } ],
+      "Token" : [
+        {"sofa" : 12,  "end" : 5 },
+        {"sofa" : 12,  "begin" : 6,  "end" : 8 },
+        {"sofa" : 12,  "begin" : 9,  "end" : 16 },
+        {"sofa" : 12,  "begin" : 17,  "end" : 20 },
+        {"sofa" : 12,  "begin" : 21,  "end" : 27 },
+        {"sofa" : 12,  "begin" : 28,  "end" : 34 },
+        {"sofa" : 12,  "begin" : 35,  "end" : 43 },
+        {"sofa" : 12,  "begin" : 44,  "end" : 47 },
+        {"sofa" : 12,  "begin" : 48,  "end" : 52 },
+        {"sofa" : 12,  "begin" : 52,  "end" : 53 },
+        {"sofa" : 12,  "begin" : 54,  "end" : 59 },
+        {"sofa" : 12,  "begin" : 60,  "end" : 62 },
+        {"sofa" : 12,  "begin" : 63,  "end" : 64 },
+        {"sofa" : 12,  "begin" : 65,  "end" : 68 },
+        {"sofa" : 12,  "begin" : 69,  "end" : 73 },
+        {"sofa" : 12,  "begin" : 74,  "end" : 75 },
+        {"sofa" : 12,  "begin" : 76,  "end" : 80 },
+        {"sofa" : 12,  "begin" : 81,  "end" : 89 },
+        {"sofa" : 12,  "begin" : 90,  "end" : 93 },
+        {"sofa" : 12,  "begin" : 94,  "end" : 96 },
+        {"sofa" : 12,  "begin" : 97,  "end" : 102 },
+        {"sofa" : 12,  "begin" : 103,  "end" : 106 },
+        {"sofa" : 12,  "begin" : 107,  "end" : 112 },
+        {"sofa" : 12,  "begin" : 113,  "end" : 119 },
+        {"sofa" : 12,  "begin" : 119,  "end" : 120 },
+        {"sofa" : 12,  "begin" : 121,  "end" : 126 },
+        {"sofa" : 12,  "begin" : 127,  "end" : 129 },
+        {"sofa" : 12,  "begin" : 130,  "end" : 131 },
+        {"sofa" : 12,  "begin" : 132,  "end" : 135 },
+        {"sofa" : 12,  "begin" : 136,  "end" : 140 },
+        {"sofa" : 12,  "begin" : 141,  "end" : 142 },
+        {"sofa" : 12,  "begin" : 143,  "end" : 148 },
+        {"sofa" : 12,  "begin" : 149,  "end" : 155 },
+        {"sofa" : 12,  "begin" : 156,  "end" : 159 },
+        {"sofa" : 12,  "begin" : 160,  "end" : 161 },
+        {"sofa" : 12,  "begin" : 162,  "end" : 167 },
+        {"sofa" : 12,  "begin" : 168,  "end" : 176 },
+        {"sofa" : 12,  "begin" : 176,  "end" : 177 },
+        {"sofa" : 12,  "begin" : 178,  "end" : 183 },
+        {"sofa" : 12,  "begin" : 184,  "end" : 186 },
+        {"sofa" : 12,  "begin" : 187,  "end" : 188 },
+        {"sofa" : 12,  "begin" : 189,  "end" : 192 },
+        {"sofa" : 12,  "begin" : 193,  "end" : 197 },
+        {"sofa" : 12,  "begin" : 198,  "end" : 205 },
+        {"sofa" : 12,  "begin" : 206,  "end" : 207 },
+        {"sofa" : 12,  "begin" : 208,  "end" : 213 },
+        {"sofa" : 12,  "begin" : 214,  "end" : 218 },
+        {"sofa" : 12,  "begin" : 218,  "end" : 219 },
+        {"sofa" : 12,  "begin" : 220,  "end" : 225 },
+        {"sofa" : 12,  "begin" : 226,  "end" : 228 },
+        {"sofa" : 12,  "begin" : 229,  "end" : 230 },
+        {"sofa" : 12,  "begin" : 231,  "end" : 234 },
+        {"sofa" : 12,  "begin" : 235,  "end" : 239 },
+        {"sofa" : 12,  "begin" : 240,  "end" : 241 },
+        {"sofa" : 12,  "begin" : 242,  "end" : 247 },
+        {"sofa" : 12,  "begin" : 248,  "end" : 251 },
+        {"sofa" : 12,  "begin" : 252,  "end" : 253 },
+        {"sofa" : 12,  "begin" : 254,  "end" : 259 },
+        {"sofa" : 12,  "begin" : 260,  "end" : 263 },
+        {"sofa" : 12,  "begin" : 264,  "end" : 266 },
+        {"sofa" : 12,  "begin" : 267,  "end" : 270 },
+        {"sofa" : 12,  "begin" : 270,  "end" : 271 },
+        {"sofa" : 12,  "begin" : 272,  "end" : 277 },
+        {"sofa" : 12,  "begin" : 278,  "end" : 281 },
+        {"sofa" : 12,  "begin" : 282,  "end" : 289 },
+        {"sofa" : 12,  "begin" : 290,  "end" : 293 },
+        {"sofa" : 12,  "begin" : 294,  "end" : 301 },
+        {"sofa" : 12,  "begin" : 302,  "end" : 310 },
+        {"sofa" : 12,  "begin" : 311,  "end" : 314 },
+        {"sofa" : 12,  "begin" : 315,  "end" : 319 },
+        {"sofa" : 12,  "begin" : 319,  "end" : 320 },
+        {"sofa" : 12,  "begin" : 321,  "end" : 326 },
+        {"sofa" : 12,  "begin" : 327,  "end" : 330 },
+        {"sofa" : 12,  "begin" : 331,  "end" : 336 },
+        {"sofa" : 12,  "begin" : 337,  "end" : 342 },
+        {"sofa" : 12,  "begin" : 343,  "end" : 351 },
+        {"sofa" : 12,  "begin" : 352,  "end" : 355 },
+        {"sofa" : 12,  "begin" : 356,  "end" : 360 },
+        {"sofa" : 12,  "begin" : 360,  "end" : 361 },
+        {"sofa" : 12,  "begin" : 362,  "end" : 367 },
+        {"sofa" : 12,  "begin" : 368,  "end" : 370 },
+        {"sofa" : 12,  "begin" : 371,  "end" : 374 },
+        {"sofa" : 12,  "begin" : 375,  "end" : 380 },
+        {"sofa" : 12,  "begin" : 381,  "end" : 385 },
+        {"sofa" : 12,  "begin" : 386,  "end" : 393 },
+        {"sofa" : 12,  "begin" : 394,  "end" : 397 },
+        {"sofa" : 12,  "begin" : 398,  "end" : 404 },
+        {"sofa" : 12,  "begin" : 404,  "end" : 405 },
+        {"sofa" : 12,  "begin" : 406,  "end" : 411 },
+        {"sofa" : 12,  "begin" : 412,  "end" : 414 },
+        {"sofa" : 12,  "begin" : 415,  "end" : 422 },
+        {"sofa" : 12,  "begin" : 423,  "end" : 426 },
+        {"sofa" : 12,  "begin" : 427,  "end" : 433 },
+        {"sofa" : 12,  "begin" : 434,  "end" : 440 },
+        {"sofa" : 12,  "begin" : 441,  "end" : 449 },
+        {"sofa" : 12,  "begin" : 450,  "end" : 453 },
+        {"sofa" : 12,  "begin" : 454,  "end" : 458 },
+        {"sofa" : 12,  "begin" : 458,  "end" : 459 },
+        {"sofa" : 12,  "begin" : 460,  "end" : 465 },
+        {"sofa" : 12,  "begin" : 466,  "end" : 468 },
+        {"sofa" : 12,  "begin" : 469,  "end" : 470 },
+        {"sofa" : 12,  "begin" : 471,  "end" : 474 },
+        {"sofa" : 12,  "begin" : 475,  "end" : 479 },
+        {"sofa" : 12,  "begin" : 480,  "end" : 485 },
+        {"sofa" : 12,  "begin" : 486,  "end" : 492 },
+        {"sofa" : 12,  "begin" : 493,  "end" : 496 },
+        {"sofa" : 12,  "begin" : 497,  "end" : 501 },
+        {"sofa" : 12,  "begin" : 502,  "end" : 508 },
+        {"sofa" : 12,  "begin" : 508,  "end" : 509 } ],
+      "Spatial_role_relation" : [
+        {"sofa" : 12,  "begin" : 48,  "end" : 52,  "Dependent" : 1516,  "Governor" : 1499,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "EC",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 81,  "end" : 89,  "Dependent" : 1579,  "Governor" : 1605,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 113,  "end" : 119,  "Dependent" : 1715,  "Governor" : 1685,  "For" : "RELATIVE",  "Steps" : "step2",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 149,  "end" : 155,  "Dependent" : 1812,  "Governor" : 1795,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 168,  "end" : 176,  "Dependent" : 1918,  "Governor" : 1892,  "For" : "RELATIVE",  "Steps" : "step2",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 214,  "end" : 218,  "Dependent" : 2015,  "Governor" : 1998,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 242,  "end" : 247,  "Dependent" : 2125,  "Governor" : 2108,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 242,  "end" : 247,  "Dependent" : 2214,  "Governor" : 2188,  "For" : "RELATIVE",  "Steps" : "step2",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 315,  "end" : 319,  "Dependent" : 2324,  "Governor" : 2307,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "EC",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 356,  "end" : 360,  "Dependent" : 2400,  "Governor" : 2383,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "EC",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 398,  "end" : 404,  "Dependent" : 2459,  "Governor" : 2476,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 454,  "end" : 458,  "Dependent" : 2569,  "Governor" : 2552,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "EC",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 486,  "end" : 492,  "Dependent" : 2675,  "Governor" : 2641,  "For" : "RELATIVE",  "Steps" : "step1",  "Topology" : "TPP",  "Viewer" : "third" },
+        {"sofa" : 12,  "begin" : 502,  "end" : 508,  "Dependent" : 2747,  "Governor" : 2721,  "For" : "RELATIVE",  "Steps" : "step2",  "Topology" : "TPP",  "Viewer" : "third" } ],
+      "Spatial_roles" : [
+        {"sofa" : 12,  "begin" : 9,  "end" : 20,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1499 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 21,  "end" : 27,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 1499 } ],  "spatial_entity" : [ ] },  1499,  1486,  1516,
+        {"sofa" : 12,  "begin" : 63,  "end" : 64,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1605 } ],  "spatial_entity" : [ ] },  1605,  1685,  1590,  1696,
+        {"sofa" : 12,  "begin" : 74,  "end" : 75,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1579 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 76,  "end" : 80,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 1579 } ],  "spatial_entity" : [ ] },  1579,
+        {"sofa" : 12,  "begin" : 94,  "end" : 106,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1715 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 107,  "end" : 112,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 1715 } ],  "spatial_entity" : [ ] },  1715,
+        {"sofa" : 12,  "begin" : 130,  "end" : 131,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1795 } ],  "spatial_entity" : [ ] },  1795,  1892,  1782,  1903,
+        {"sofa" : 12,  "begin" : 141,  "end" : 142,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1812 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 143,  "end" : 148,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 1812 } ],  "spatial_entity" : [ ] },  1812,
+        {"sofa" : 12,  "begin" : 160,  "end" : 161,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1918 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 162,  "end" : 167,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 1918 } ],  "spatial_entity" : [ ] },  1918,
+        {"sofa" : 12,  "begin" : 187,  "end" : 188,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 1998 } ],  "spatial_entity" : [ ] },  1998,  1985,
+        {"sofa" : 12,  "begin" : 198,  "end" : 207,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2015 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 208,  "end" : 213,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 2015 } ],  "spatial_entity" : [ ] },  2015,
+        {"sofa" : 12,  "begin" : 229,  "end" : 230,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2108 } ],  "spatial_entity" : [ ] },  2108,  2188,  2095,  2199,
+        {"sofa" : 12,  "begin" : 240,  "end" : 241,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2125 } ],  "spatial_entity" : [ ] },  2125,  2214,
+        {"sofa" : 12,  "begin" : 252,  "end" : 253,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2214 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 254,  "end" : 259,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 2214 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 264,  "end" : 270,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "area",  "target" : 2214 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 282,  "end" : 293,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2307 } ],  "spatial_entity" : [ ] },  2307,  2294,  2324,
+        {"sofa" : 12,  "begin" : 331,  "end" : 336,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2383 } ],  "spatial_entity" : [ ] },  2383,  2370,  2400,
+        {"sofa" : 12,  "begin" : 371,  "end" : 374,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2476 } ],  "spatial_entity" : [ ] },  2476,  2446,
+        {"sofa" : 12,  "begin" : 386,  "end" : 397,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2459 } ],  "spatial_entity" : [ ] },  2459,
+        {"sofa" : 12,  "begin" : 415,  "end" : 426,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2552 } ],  "spatial_entity" : [ ] },
+        {"sofa" : 12,  "begin" : 427,  "end" : 433,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 2552 } ],  "spatial_entity" : [ ] },  2552,  2539,  2569,
+        {"sofa" : 12,  "begin" : 469,  "end" : 470,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "quantity",  "target" : 2641 } ],  "spatial_entity" : [ ] },  2641,  2721,  2628,  2732,
+        {"sofa" : 12,  "begin" : 480,  "end" : 485,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 2675 } ],  "spatial_entity" : [ ] },  2675,
+        {"sofa" : 12,  "begin" : 497,  "end" : 501,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "color",  "target" : 2747 } ],  "spatial_entity" : [ ] },  2747 ] } },
+  "_referenced_fss" : {
+    "12" : {"_type" : "Sofa",  "sofaNum" : 1,  "sofaID" : "_InitialView",  "mimeType" : "text",  "sofaString" : "There is exactly one yellow square touching the edge.\nThere is a box with a blue triangle and at least one black circle.\nThere is 1 box with a black square and a black triangle.\nThere is 1 box with exactly 1 black item.\nThere is a box with 3 items and a black one on top.\nThere are exactly two squares touching the edge.\nThere are three items touching the side.\nThere is one tower with exactly two blocks.\nThere is exactly one yellow square touching the edge.\nThere is a box with black square and blue circle." },
+    "1499" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 28,  "end" : 34,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 1486 } ] },
+    "1486" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 35,  "end" : 43,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1605" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 65,  "end" : 68,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 1590 } ] },
+    "1590" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 69,  "end" : 73,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1696" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 69,  "end" : 73,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1579" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 81,  "end" : 89,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1590 } ] },
+    "1715" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 113,  "end" : 119,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1696 } ] },
+    "1795" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 132,  "end" : 135,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 1782 } ] },
+    "1782" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 136,  "end" : 140,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1903" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 136,  "end" : 140,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1812" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 149,  "end" : 155,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1782 } ] },
+    "1918" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 168,  "end" : 176,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1903 } ] },
+    "1998" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 189,  "end" : 192,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 1985 } ] },
+    "1985" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 193,  "end" : 197,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2015" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 214,  "end" : 218,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1985 } ] },
+    "2108" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 231,  "end" : 234,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2095 } ] },
+    "2095" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 235,  "end" : 239,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2199" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 235,  "end" : 239,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2125" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 242,  "end" : 247,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2095 } ] },
+    "2214" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 242,  "end" : 247,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2199 } ] },
+    "2307" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 294,  "end" : 301,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2294 } ] },
+    "2294" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 302,  "end" : 310,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2383" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 337,  "end" : 342,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2370 } ] },
+    "2370" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 343,  "end" : 351,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2476" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 375,  "end" : 380,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2446 } ] },
+    "2446" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 381,  "end" : 385,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2459" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 398,  "end" : 404,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2446 } ] },
+    "2552" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 434,  "end" : 440,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2539 } ] },
+    "2539" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 441,  "end" : 449,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2641" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 471,  "end" : 474,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2628 } ] },
+    "2628" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 475,  "end" : 479,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2732" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 475,  "end" : 479,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "2675" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 486,  "end" : 492,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2628 } ] },
+    "2747" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 502,  "end" : 508,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2732 } ] },
+    "1516" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 48,  "end" : 52,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1486 } ] },
+    "1685" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 65,  "end" : 68,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 1696 } ] },
+    "1892" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 132,  "end" : 135,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 1903 } ] },
+    "2188" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 231,  "end" : 234,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2199 } ] },
+    "2324" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 315,  "end" : 319,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2294 } ] },
+    "2400" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 356,  "end" : 360,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 2370 } ] },
+    "2569" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 454,  "end" : 458,  "properties" : [ ],  "spatial_entity" : [ ] },
+    "2721" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 471,  "end" : 474,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "trajector",  "target" : 2732 } ] } } }

@@ -1,2 +1,0 @@
-[{"Config1": {"Spatial_Entity": {"SPT1": {"text": "block", "quantity": "a", "color": "blue"}, "SPL1": {"text": "tower", "area": "the top of", "quantity": "a"}, "SPI1": {"text": "as"}}, "type": "TOP:TPP"}, "Config2": {"Spatial_Entity": {"SPT2": "SPL1", "SPL2": {"text": "blocks", "quantity": "four"}, "SPI2": {"text": "with"}}, "type": "TOP:TPP"}}
-]
