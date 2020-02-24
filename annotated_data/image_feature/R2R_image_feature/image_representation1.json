@@ -1,0 +1,914 @@
+[
+    {
+        "new_id": "PIC0",
+        "pose": [
+            -5.48891,
+            1.4484,
+            1.53509
+        ],
+        "path": [
+            "6800f98e9e67463e9928a4253253bc2f",
+            "0f37bd0737e349de9d536263a4bdd60d",
+            "77a1a11978b04e9cbf74914c98578ab8"
+        ],
+        "image_id": "10c252c90fa24ef3b698c6f54d984c5c",
+        "objects": [
+            "large picture",
+            "painting of the mermaid"
+        ]
+    },
+    {
+        "new_id": "PIC1",
+        "pose": [
+            -2.20971,
+            -0.492952,
+            1.58483
+        ],
+        "path": [
+            "b2e9278f9b8f4661abcb0446d2cbb98e"
+        ],
+        "image_id": "0e92a69a50414253a23043758f111cec",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC2",
+        "pose": [
+            -8.74239,
+            1.10516,
+            1.52258
+        ],
+        "path": [
+            "6800f98e9e67463e9928a4253253bc2f",
+            "1e86968849944444b66d9537efb5da9e",
+            "3a6d2322867f40d9a3d2758ab88df288",
+            "23ec8bbec8eb40478411cba2e55b732e",
+            "902e65564f81489687878425d9b3cb55",
+            "e34dcf54d26a4a95869cc8a0c01cd2be",
+            "8a0f2f1a8ea441658501561e5dc34a3e",
+            "50c241453dfd45c1ba95b5d7191982ef",
+            "5b9b2794954e4694a45fc424a8643081"
+        ],
+        "image_id": "51857544c192476faebf212acb1b3d90",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC3",
+        "pose": [
+            2.41405,
+            -0.397658,
+            1.57464
+        ],
+        "path": [
+            "00ebbf3782c64d74aaf7dd39cd561175",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "28db29e8c72c4a68bfdf5bb2b454443d",
+            "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+            "1a41339ece1846eda6a924cdb4c417dd"
+        ],
+        "image_id": "558ba0761bf24428b9cf91e60333ea25",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC4",
+        "pose": [
+            -6.30406,
+            3.82772,
+            0.685368
+        ],
+        "path": [
+            "6800f98e9e67463e9928a4253253bc2f",
+            "df211c2c55f94b87a717ce1469577456"
+        ],
+        "image_id": "3577de361e1a46b1be544d37731bfde6",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC5",
+        "pose": [
+            0.0748219,
+            -0.000360124,
+            1.531
+        ],
+        "path": [
+            "08c774f20c984008882da2b8547850eb",
+            "c429b363fd3145fe8a7631bbe9644066",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+            "1a41339ece1846eda6a924cdb4c417dd",
+            "b2e9278f9b8f4661abcb0446d2cbb98e",
+            "c8112f69d34d476fbb29e6b3909deba2"
+        ],
+        "image_id": "da5fa65c13e643719a20cbb818c9a85d",
+        "objects": [
+            "hallway",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC6",
+        "pose": [
+            3.50744,
+            -0.492015,
+            1.57611
+        ],
+        "path": [
+            "558ba0761bf24428b9cf91e60333ea25",
+            "e693b5de8ad84d4cb61a79ece2e66d11",
+            "28db29e8c72c4a68bfdf5bb2b454443d"
+        ],
+        "image_id": "00ebbf3782c64d74aaf7dd39cd561175",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC7",
+        "pose": [
+            -4.37694,
+            0.0314129,
+            0.70628
+        ],
+        "path": [
+            "d160d2229e4148839ef3a43dbc0ecdc4",
+            "c341c46acf7044d1a712d622cbc94a27",
+            "8ccf449f599a4cd88648e1d0ff39fdd0"
+        ],
+        "image_id": "cb6a9786e4ff47f79a11b024c36ef7c0",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC8",
+        "pose": [
+            -1.65411,
+            1.3889,
+            1.53091
+        ],
+        "path": [
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "5e9f4f8654574e699480e90ecdd150c8",
+            "1a41339ece1846eda6a924cdb4c417dd",
+            "abe20dd6e5194f579dfc6b63a612c150"
+        ],
+        "image_id": "08c774f20c984008882da2b8547850eb",
+        "objects": [
+            "glass table"
+        ]
+    },
+    {
+        "new_id": "PIC9",
+        "pose": [
+            -7.16449,
+            -0.0911872,
+            1.53422
+        ],
+        "path": [
+            "1e86968849944444b66d9537efb5da9e",
+            "e0ce09f0178c48e2bbe649d2bf659702",
+            "8ccf449f599a4cd88648e1d0ff39fdd0"
+        ],
+        "image_id": "cb66d4266148455bbddf5d059a483711",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC10",
+        "pose": [
+            2.14605,
+            3.05823,
+            1.57588
+        ],
+        "path": [
+            "f4d03f729dfc49068db327584455e975",
+            "5efaa5e4a30e481f9dadc1bac5e56a21",
+            "194bef4cbba641dc9860ba7f43a0c16a"
+        ],
+        "image_id": "85c23efeaecd4d43a7dcd5b90137179e",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC11",
+        "pose": [
+            -3.83739,
+            -0.0646867,
+            1.54939
+        ],
+        "path": [
+            "cb6a9786e4ff47f79a11b024c36ef7c0",
+            "c341c46acf7044d1a712d622cbc94a27"
+        ],
+        "image_id": "d160d2229e4148839ef3a43dbc0ecdc4",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC12",
+        "pose": [
+            -6.38498,
+            2.09479,
+            0.687292
+        ],
+        "path": [
+            "10c252c90fa24ef3b698c6f54d984c5c",
+            "51857544c192476faebf212acb1b3d90",
+            "3577de361e1a46b1be544d37731bfde6",
+            "0f37bd0737e349de9d536263a4bdd60d",
+            "77a1a11978b04e9cbf74914c98578ab8",
+            "e34dcf54d26a4a95869cc8a0c01cd2be"
+        ],
+        "image_id": "6800f98e9e67463e9928a4253253bc2f",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC13",
+        "pose": [
+            3.29903,
+            -1.67579,
+            0.666065
+        ],
+        "path": [
+            "00ebbf3782c64d74aaf7dd39cd561175",
+            "28db29e8c72c4a68bfdf5bb2b454443d"
+        ],
+        "image_id": "e693b5de8ad84d4cb61a79ece2e66d11",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC14",
+        "pose": [
+            -1.83058,
+            4.00278,
+            0.694788
+        ],
+        "path": [
+            "b185432bf33645aca813ac2a961b4140",
+            "d65b6505904448d1940e679c9a098047",
+            "abe20dd6e5194f579dfc6b63a612c150"
+        ],
+        "image_id": "352a92fb1f6d4b71b3aafcc74e196234",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC15",
+        "pose": [
+            0.250682,
+            1.33707,
+            1.58124
+        ],
+        "path": [
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "1a41339ece1846eda6a924cdb4c417dd",
+            "701f7128272a4bb2acd9dbd89b5cdf6f",
+            "08115b08da534f1aafff2fa81fc73512",
+            "b2e9278f9b8f4661abcb0446d2cbb98e"
+        ],
+        "image_id": "c429b363fd3145fe8a7631bbe9644066",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC16",
+        "pose": [
+            -8.21671,
+            -0.0425303,
+            1.52825
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "cb66d4266148455bbddf5d059a483711",
+            "30c97842da204e6290ac32904c924e17",
+            "23ec8bbec8eb40478411cba2e55b732e",
+            "e0ce09f0178c48e2bbe649d2bf659702",
+            "8a0f2f1a8ea441658501561e5dc34a3e"
+        ],
+        "image_id": "1e86968849944444b66d9537efb5da9e",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC17",
+        "pose": [
+            -2.28926,
+            1.37284,
+            1.53253
+        ],
+        "path": [
+            "08c774f20c984008882da2b8547850eb",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "b185432bf33645aca813ac2a961b4140",
+            "abe20dd6e5194f579dfc6b63a612c150"
+        ],
+        "image_id": "5e9f4f8654574e699480e90ecdd150c8",
+        "objects": [
+            "chair",
+            "bar",
+            "dining rom table"
+        ]
+    },
+    {
+        "new_id": "PIC18",
+        "pose": [
+            -6.42198,
+            1.37956,
+            1.5275
+        ],
+        "path": [
+            "10c252c90fa24ef3b698c6f54d984c5c",
+            "6800f98e9e67463e9928a4253253bc2f",
+            "e34dcf54d26a4a95869cc8a0c01cd2be",
+            "50c241453dfd45c1ba95b5d7191982ef"
+        ],
+        "image_id": "0f37bd0737e349de9d536263a4bdd60d",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC19",
+        "pose": [
+            -5.62061,
+            4.76931,
+            0.688087
+        ],
+        "path": [
+            "3577de361e1a46b1be544d37731bfde6",
+            "e34dcf54d26a4a95869cc8a0c01cd2be"
+        ],
+        "image_id": "df211c2c55f94b87a717ce1469577456",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC20",
+        "pose": [
+            2.36721,
+            4.30362,
+            1.52642
+        ],
+        "path": [
+            "85c23efeaecd4d43a7dcd5b90137179e"
+        ],
+        "image_id": "f4d03f729dfc49068db327584455e975",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC21",
+        "pose": [
+            1.44112,
+            -0.394211,
+            1.52512
+        ],
+        "path": [
+            "558ba0761bf24428b9cf91e60333ea25",
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "5e9f4f8654574e699480e90ecdd150c8",
+            "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+            "1a41339ece1846eda6a924cdb4c417dd",
+            "b2e9278f9b8f4661abcb0446d2cbb98e",
+            "c8112f69d34d476fbb29e6b3909deba2",
+            "194bef4cbba641dc9860ba7f43a0c16a"
+        ],
+        "image_id": "ee59d6b5e5da4def9fe85a8ba94ecf25",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC22",
+        "pose": [
+            -9.29744,
+            0.0521322,
+            1.52483
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "30c97842da204e6290ac32904c924e17",
+            "23ec8bbec8eb40478411cba2e55b732e",
+            "e34dcf54d26a4a95869cc8a0c01cd2be",
+            "8a0f2f1a8ea441658501561e5dc34a3e"
+        ],
+        "image_id": "3a6d2322867f40d9a3d2758ab88df288",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC23",
+        "pose": [
+            -4.3338,
+            1.46842,
+            1.53345
+        ],
+        "path": [
+            "10c252c90fa24ef3b698c6f54d984c5c",
+            "6800f98e9e67463e9928a4253253bc2f",
+            "b185432bf33645aca813ac2a961b4140"
+        ],
+        "image_id": "77a1a11978b04e9cbf74914c98578ab8",
+        "objects": [
+            "chair",
+            "bar",
+            "dining room table"
+        ]
+    },
+    {
+        "new_id": "PIC24",
+        "pose": [
+            0.380409,
+            4.51176,
+            0.674915
+        ],
+        "path": [
+            "701f7128272a4bb2acd9dbd89b5cdf6f",
+            "d65b6505904448d1940e679c9a098047",
+            "abe20dd6e5194f579dfc6b63a612c150"
+        ],
+        "image_id": "8345f786b7cb4e1eb6c63e2b87ddcabb",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC25",
+        "pose": [
+            3.67576,
+            -1.16105,
+            1.57021
+        ],
+        "path": [
+            "558ba0761bf24428b9cf91e60333ea25",
+            "00ebbf3782c64d74aaf7dd39cd561175",
+            "e693b5de8ad84d4cb61a79ece2e66d11"
+        ],
+        "image_id": "28db29e8c72c4a68bfdf5bb2b454443d",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC26",
+        "pose": [
+            -10.5606,
+            -2.15014,
+            1.04593
+        ],
+        "path": [
+            "1e86968849944444b66d9537efb5da9e",
+            "3a6d2322867f40d9a3d2758ab88df288",
+            "23ec8bbec8eb40478411cba2e55b732e",
+            "8a0f2f1a8ea441658501561e5dc34a3e"
+        ],
+        "image_id": "30c97842da204e6290ac32904c924e17",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC27",
+        "pose": [
+            -4.35786,
+            0.108367,
+            1.54412
+        ],
+        "path": [
+            "cb6a9786e4ff47f79a11b024c36ef7c0",
+            "d160d2229e4148839ef3a43dbc0ecdc4",
+            "8ccf449f599a4cd88648e1d0ff39fdd0"
+        ],
+        "image_id": "c341c46acf7044d1a712d622cbc94a27",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC28",
+        "pose": [
+            1.59346,
+            0.480708,
+            1.52467
+        ],
+        "path": [
+            "558ba0761bf24428b9cf91e60333ea25",
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "c8112f69d34d476fbb29e6b3909deba2",
+            "5efaa5e4a30e481f9dadc1bac5e56a21",
+            "194bef4cbba641dc9860ba7f43a0c16a"
+        ],
+        "image_id": "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC29",
+        "pose": [
+            -9.87025,
+            1.26198,
+            1.5231
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "1e86968849944444b66d9537efb5da9e",
+            "3a6d2322867f40d9a3d2758ab88df288",
+            "30c97842da204e6290ac32904c924e17",
+            "902e65564f81489687878425d9b3cb55",
+            "8a0f2f1a8ea441658501561e5dc34a3e"
+        ],
+        "image_id": "23ec8bbec8eb40478411cba2e55b732e",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC30",
+        "pose": [
+            -3.12968,
+            1.43604,
+            1.5309
+        ],
+        "path": [
+            "352a92fb1f6d4b71b3aafcc74e196234",
+            "5e9f4f8654574e699480e90ecdd150c8",
+            "77a1a11978b04e9cbf74914c98578ab8"
+        ],
+        "image_id": "b185432bf33645aca813ac2a961b4140",
+        "objects": [
+            "chair",
+            "bar",
+            "dining room table"
+        ]
+    },
+    {
+        "new_id": "PIC31",
+        "pose": [
+            -0.674019,
+            1.14414,
+            1.51994
+        ],
+        "path": [
+            "558ba0761bf24428b9cf91e60333ea25",
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "08c774f20c984008882da2b8547850eb",
+            "c429b363fd3145fe8a7631bbe9644066",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "08115b08da534f1aafff2fa81fc73512",
+            "c8112f69d34d476fbb29e6b3909deba2",
+            "abe20dd6e5194f579dfc6b63a612c150"
+        ],
+        "image_id": "1a41339ece1846eda6a924cdb4c417dd",
+        "objects": [
+            "something1"
+
+        ]
+    },
+    {
+        "new_id": "PIC32",
+        "pose": [
+            0.402613,
+            3.27014,
+            1.57419
+        ],
+        "path": [
+            "c429b363fd3145fe8a7631bbe9644066",
+            "8345f786b7cb4e1eb6c63e2b87ddcabb",
+            "08115b08da534f1aafff2fa81fc73512",
+            "d65b6505904448d1940e679c9a098047"
+        ],
+        "image_id": "701f7128272a4bb2acd9dbd89b5cdf6f",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC33",
+        "pose": [
+            -10.4286,
+            2.5641,
+            1.51355
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "23ec8bbec8eb40478411cba2e55b732e",
+            "5b9b2794954e4694a45fc424a8643081"
+        ],
+        "image_id": "902e65564f81489687878425d9b3cb55",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC34",
+        "pose": [
+            0.47214,
+            3.03935,
+            0.683295
+        ],
+        "path": [
+            "c429b363fd3145fe8a7631bbe9644066",
+            "1a41339ece1846eda6a924cdb4c417dd",
+            "701f7128272a4bb2acd9dbd89b5cdf6f"
+        ],
+        "image_id": "08115b08da534f1aafff2fa81fc73512",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC35",
+        "pose": [
+            0.210453,
+            4.65741,
+            1.58177
+        ],
+        "path": [
+            "352a92fb1f6d4b71b3aafcc74e196234",
+            "8345f786b7cb4e1eb6c63e2b87ddcabb",
+            "701f7128272a4bb2acd9dbd89b5cdf6f"
+        ],
+        "image_id": "d65b6505904448d1940e679c9a098047",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC36",
+        "pose": [
+            -6.98645,
+            1.40146,
+            1.52494
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "6800f98e9e67463e9928a4253253bc2f",
+            "0f37bd0737e349de9d536263a4bdd60d",
+            "df211c2c55f94b87a717ce1469577456",
+            "3a6d2322867f40d9a3d2758ab88df288",
+            "50c241453dfd45c1ba95b5d7191982ef"
+        ],
+        "image_id": "e34dcf54d26a4a95869cc8a0c01cd2be",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC37",
+        "pose": [
+            -7.32572,
+            -1.83562,
+            1.56959
+        ],
+        "path": [
+            "cb66d4266148455bbddf5d059a483711",
+            "1e86968849944444b66d9537efb5da9e"
+        ],
+        "image_id": "e0ce09f0178c48e2bbe649d2bf659702",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC38",
+        "pose": [
+            -8.62374,
+            0.0268712,
+            1.52438
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "1e86968849944444b66d9537efb5da9e",
+            "3a6d2322867f40d9a3d2758ab88df288",
+            "30c97842da204e6290ac32904c924e17",
+            "23ec8bbec8eb40478411cba2e55b732e",
+            "50c241453dfd45c1ba95b5d7191982ef"
+        ],
+        "image_id": "8a0f2f1a8ea441658501561e5dc34a3e",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC39",
+        "pose": [
+            -7.24598,
+            2.59114,
+            1.56831
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "0f37bd0737e349de9d536263a4bdd60d",
+            "e34dcf54d26a4a95869cc8a0c01cd2be",
+            "8a0f2f1a8ea441658501561e5dc34a3e"
+        ],
+        "image_id": "50c241453dfd45c1ba95b5d7191982ef",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC40",
+        "pose": [
+            -0.915957,
+            -0.412211,
+            1.53229
+        ],
+        "path": [
+            "0e92a69a50414253a23043758f111cec",
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "c429b363fd3145fe8a7631bbe9644066",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "c8112f69d34d476fbb29e6b3909deba2"
+        ],
+        "image_id": "b2e9278f9b8f4661abcb0446d2cbb98e",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC41",
+        "pose": [
+            0.151114,
+            -0.841035,
+            1.52965
+        ],
+        "path": [
+            "da5fa65c13e643719a20cbb818c9a85d",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+            "1a41339ece1846eda6a924cdb4c417dd",
+            "b2e9278f9b8f4661abcb0446d2cbb98e"
+        ],
+        "image_id": "c8112f69d34d476fbb29e6b3909deba2",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC42",
+        "pose": [
+            -5.61644,
+            -0.20379,
+            1.54015
+        ],
+        "path": [
+            "cb6a9786e4ff47f79a11b024c36ef7c0",
+            "cb66d4266148455bbddf5d059a483711",
+            "c341c46acf7044d1a712d622cbc94a27"
+        ],
+        "image_id": "8ccf449f599a4cd88648e1d0ff39fdd0",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC43",
+        "pose": [
+            -10.3961,
+            3.62407,
+            1.51389
+        ],
+        "path": [
+            "51857544c192476faebf212acb1b3d90",
+            "902e65564f81489687878425d9b3cb55",
+            "db145474a5fa476d95c2cc7f09e7c83a"
+        ],
+        "image_id": "5b9b2794954e4694a45fc424a8643081",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC44",
+        "pose": [
+            1.74447,
+            1.23274,
+            1.5308
+        ],
+        "path": [
+            "85c23efeaecd4d43a7dcd5b90137179e",
+            "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+            "194bef4cbba641dc9860ba7f43a0c16a"
+        ],
+        "image_id": "5efaa5e4a30e481f9dadc1bac5e56a21",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC45",
+        "pose": [
+            2.39406,
+            1.37183,
+            1.57901
+        ],
+        "path": [
+            "85c23efeaecd4d43a7dcd5b90137179e",
+            "ee59d6b5e5da4def9fe85a8ba94ecf25",
+            "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
+            "5efaa5e4a30e481f9dadc1bac5e56a21"
+        ],
+        "image_id": "194bef4cbba641dc9860ba7f43a0c16a",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC46",
+        "pose": [
+            -1.73545,
+            3.59541,
+            1.53427
+        ],
+        "path": [
+            "08c774f20c984008882da2b8547850eb",
+            "352a92fb1f6d4b71b3aafcc74e196234",
+            "5e9f4f8654574e699480e90ecdd150c8",
+            "8345f786b7cb4e1eb6c63e2b87ddcabb",
+            "1a41339ece1846eda6a924cdb4c417dd"
+        ],
+        "image_id": "abe20dd6e5194f579dfc6b63a612c150",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    },
+    {
+        "new_id": "PIC47",
+        "pose": [
+            -10.2077,
+            4.43158,
+            1.51981
+        ],
+        "path": [
+            "5b9b2794954e4694a45fc424a8643081"
+        ],
+        "image_id": "db145474a5fa476d95c2cc7f09e7c83a",
+        "objects": [
+            "something1",
+            "something2"
+        ]
+    }
+]
