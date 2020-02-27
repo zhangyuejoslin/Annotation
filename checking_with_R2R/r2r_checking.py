@@ -22,6 +22,9 @@ def next_motion(motion_type, start_id, end_id):
     elif motion_type == "Motions:Right":
         if end_point[0] > start_point[0] and end_point[1] < start_point[1] and abs(end_point[1] - start_point[1])>0.5:
             return end_id
+    elif motion_type == "Motions:Left":
+        if end_point[0] > start_point[0] and end_point[1] > start_point[1] and abs(end_point[1] - start_point[1]) > 0.5:
+            return end_id
     elif motion_type == "Motions:Turn Right":
         return start_id
     else:
@@ -51,13 +54,16 @@ def get_object(image_id):
             related_objects = image['objects']
     return  related_objects
 
-def next_direction(motion_type):
+def next_direction(direction, motion_type):
+    # 0 is north, 90 is east, 180 is south, and 270 is west.
     if motion_type == "Motions:Forward":
-            return "Forward"
+            return direction
     elif motion_type == "Motions:Right" or "Motions:Turn Right":
-            return "Right"
-    elif motion_type == "Motions:Left":
-            return "Left"
+            direction += 30
+            return direction
+    elif motion_type == "Motions:Left" or "Motions:Turn Right":
+            direction -= 30
+            return direction
 
 def path_checking(start_point, start_direction, configure):
     next_point = start_point
@@ -91,20 +97,20 @@ def path_checking(start_point, start_direction, configure):
                         continue
                     if next_motion_point != next_point:
                         next_point = each_related_path
-                    direction = next_direction(config_content['type'])
+                    direction = next_direction(direction, config_content['type'])
                     direction_of_path.append(direction)
                     path.append(next_point)
-                    print(config_num+"$$$")
-                    print(direction_of_path)
-                    print(path)
-                    break
+                    #print(config_num+"$$$")
 
+                    break
             # if achieve the objective of the configuration
                 if 'SPL' + config_num[6:] not in config_content['spatial_entity'] or \
                 next_configuration(config_content['distance'],config_content['spatial_entity']['SPL'+config_num[6:]]['text'],get_object(each_related_path)):
                     break
             else:
                 break
+    print(direction_of_path)
+    print(path)
 
 
 if __name__ == '__main__':
@@ -115,6 +121,5 @@ if __name__ == '__main__':
 
         start_point = "10c252c90fa24ef3b698c6f54d984c5c"
         # 0 is forward, 1 is right, 2 is left
-        start_direction = "Forward"
+        start_direction = 90
         path_checking(start_point, start_direction, configure)
-        break

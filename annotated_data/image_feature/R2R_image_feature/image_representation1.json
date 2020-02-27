@@ -12,10 +12,10 @@
             "77a1a11978b04e9cbf74914c98578ab8"
         ],
         "image_id": "10c252c90fa24ef3b698c6f54d984c5c",
-        "objects": [
-            "large picture",
-            "painting of the mermaid"
-        ]
+        "objects": {
+        "large picture": "105",
+        "painting of the mermaid":"105"
+    }
     },
     {
         "new_id": "PIC1",
@@ -166,9 +166,9 @@
             "abe20dd6e5194f579dfc6b63a612c150"
         ],
         "image_id": "08c774f20c984008882da2b8547850eb",
-        "objects": [
-            "glass table"
-        ]
+        "objects": {
+        "glass table": "60"
+    }
     },
     {
         "new_id": "PIC9",
@@ -334,11 +334,11 @@
             "abe20dd6e5194f579dfc6b63a612c150"
         ],
         "image_id": "5e9f4f8654574e699480e90ecdd150c8",
-        "objects": [
-            "chair",
-            "bar",
-            "dining room table"
-        ]
+        "objects": {
+            "chair": "85",
+            "bar": "120",
+            "dining room table": "85"
+        }
     },
     {
         "new_id": "PIC18",
@@ -448,11 +448,11 @@
             "b185432bf33645aca813ac2a961b4140"
         ],
         "image_id": "77a1a11978b04e9cbf74914c98578ab8",
-        "objects": [
-            "chair",
-            "bar",
-            "dining room table"
-        ]
+        "objects": {
+            "chair":"90",
+            "bar": "100",
+            "dining room table": "90"
+        }
     },
     {
         "new_id": "PIC24",
@@ -582,11 +582,11 @@
             "77a1a11978b04e9cbf74914c98578ab8"
         ],
         "image_id": "b185432bf33645aca813ac2a961b4140",
-        "objects": [
-            "chair",
-            "bar",
-            "dining room table"
-        ]
+        "objects": {
+            "chair": "85",
+            "bar": "95",
+            "dining room table":"85"
+        }
     },
     {
         "new_id": "PIC31",
