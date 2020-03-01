@@ -13,8 +13,9 @@
         ],
         "image_id": "10c252c90fa24ef3b698c6f54d984c5c",
         "objects": {
-        "large picture": "105",
-        "painting of the mermaid":"105"
+        "large picture": ["1.5","3.0"],
+        "painting of the mermaid":["1.5","3.0"],
+        "counter":"1.5"
     }
     },
     {
@@ -28,10 +29,8 @@
             "b2e9278f9b8f4661abcb0446d2cbb98e"
         ],
         "image_id": "0e92a69a50414253a23043758f111cec",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {
+        }
     },
     {
         "new_id": "PIC2",
@@ -52,10 +51,8 @@
             "5b9b2794954e4694a45fc424a8643081"
         ],
         "image_id": "51857544c192476faebf212acb1b3d90",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {
+        }
     },
     {
         "new_id": "PIC3",
@@ -72,10 +69,7 @@
             "1a41339ece1846eda6a924cdb4c417dd"
         ],
         "image_id": "558ba0761bf24428b9cf91e60333ea25",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC4",
@@ -89,10 +83,7 @@
             "df211c2c55f94b87a717ce1469577456"
         ],
         "image_id": "3577de361e1a46b1be544d37731bfde6",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC5",
@@ -111,10 +102,9 @@
             "c8112f69d34d476fbb29e6b3909deba2"
         ],
         "image_id": "da5fa65c13e643719a20cbb818c9a85d",
-        "objects": [
-            "hallway",
-            "something2"
-        ]
+        "objects":
+            {"hallway":["3.0"]}
+
     },
     {
         "new_id": "PIC6",
@@ -129,10 +119,7 @@
             "28db29e8c72c4a68bfdf5bb2b454443d"
         ],
         "image_id": "00ebbf3782c64d74aaf7dd39cd561175",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC7",
@@ -147,10 +134,7 @@
             "8ccf449f599a4cd88648e1d0ff39fdd0"
         ],
         "image_id": "cb6a9786e4ff47f79a11b024c36ef7c0",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC8",
@@ -167,7 +151,8 @@
         ],
         "image_id": "08c774f20c984008882da2b8547850eb",
         "objects": {
-        "glass table": "60"
+        "glass table": ["1.5"],
+        "counter":["1.5"]
     }
     },
     {
@@ -183,10 +168,7 @@
             "8ccf449f599a4cd88648e1d0ff39fdd0"
         ],
         "image_id": "cb66d4266148455bbddf5d059a483711",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC10",
@@ -201,10 +183,7 @@
             "194bef4cbba641dc9860ba7f43a0c16a"
         ],
         "image_id": "85c23efeaecd4d43a7dcd5b90137179e",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC11",
@@ -218,10 +197,7 @@
             "c341c46acf7044d1a712d622cbc94a27"
         ],
         "image_id": "d160d2229e4148839ef3a43dbc0ecdc4",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC12",
@@ -239,10 +215,7 @@
             "e34dcf54d26a4a95869cc8a0c01cd2be"
         ],
         "image_id": "6800f98e9e67463e9928a4253253bc2f",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC13",
@@ -256,10 +229,7 @@
             "28db29e8c72c4a68bfdf5bb2b454443d"
         ],
         "image_id": "e693b5de8ad84d4cb61a79ece2e66d11",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC14",
@@ -274,10 +244,7 @@
             "abe20dd6e5194f579dfc6b63a612c150"
         ],
         "image_id": "352a92fb1f6d4b71b3aafcc74e196234",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC15",
@@ -294,10 +261,7 @@
             "b2e9278f9b8f4661abcb0446d2cbb98e"
         ],
         "image_id": "c429b363fd3145fe8a7631bbe9644066",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC16",
@@ -315,10 +279,7 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "1e86968849944444b66d9537efb5da9e",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC17",
@@ -335,9 +296,10 @@
         ],
         "image_id": "5e9f4f8654574e699480e90ecdd150c8",
         "objects": {
-            "chair": "85",
-            "bar": "120",
-            "dining room table": "85"
+            "chair": ["1.5"],
+            "bar": ["1.5"],
+            "dining room table": ["1.5"],
+            "counter": ["1.5"]
         }
     },
     {
@@ -354,10 +316,7 @@
             "50c241453dfd45c1ba95b5d7191982ef"
         ],
         "image_id": "0f37bd0737e349de9d536263a4bdd60d",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC19",
@@ -371,10 +330,7 @@
             "e34dcf54d26a4a95869cc8a0c01cd2be"
         ],
         "image_id": "df211c2c55f94b87a717ce1469577456",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC20",
@@ -387,10 +343,7 @@
             "85c23efeaecd4d43a7dcd5b90137179e"
         ],
         "image_id": "f4d03f729dfc49068db327584455e975",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC21",
@@ -410,10 +363,7 @@
             "194bef4cbba641dc9860ba7f43a0c16a"
         ],
         "image_id": "ee59d6b5e5da4def9fe85a8ba94ecf25",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC22",
@@ -430,10 +380,7 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "3a6d2322867f40d9a3d2758ab88df288",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC23",
@@ -449,9 +396,10 @@
         ],
         "image_id": "77a1a11978b04e9cbf74914c98578ab8",
         "objects": {
-            "chair":"90",
-            "bar": "100",
-            "dining room table": "90"
+            "chair":["1.5"],
+            "bar": ["1.5"],
+            "dining room table": ["1.5"],
+            "counter": ["1.5"]
         }
     },
     {
@@ -467,10 +415,7 @@
             "abe20dd6e5194f579dfc6b63a612c150"
         ],
         "image_id": "8345f786b7cb4e1eb6c63e2b87ddcabb",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC25",
@@ -485,10 +430,7 @@
             "e693b5de8ad84d4cb61a79ece2e66d11"
         ],
         "image_id": "28db29e8c72c4a68bfdf5bb2b454443d",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC26",
@@ -504,10 +446,7 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "30c97842da204e6290ac32904c924e17",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC27",
@@ -522,10 +461,7 @@
             "8ccf449f599a4cd88648e1d0ff39fdd0"
         ],
         "image_id": "c341c46acf7044d1a712d622cbc94a27",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC28",
@@ -543,10 +479,7 @@
             "194bef4cbba641dc9860ba7f43a0c16a"
         ],
         "image_id": "7ad0b4e15c4f4cf38f56efbbcadfbf6a",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC29",
@@ -564,10 +497,7 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "23ec8bbec8eb40478411cba2e55b732e",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC30",
@@ -583,9 +513,10 @@
         ],
         "image_id": "b185432bf33645aca813ac2a961b4140",
         "objects": {
-            "chair": "85",
-            "bar": "95",
-            "dining room table":"85"
+            "chair": ["1.5"],
+            "bar": ["1.5"],
+            "dining room table":["1.5"],
+            "counter": ["1.5"]
         }
     },
     {
@@ -606,9 +537,9 @@
             "abe20dd6e5194f579dfc6b63a612c150"
         ],
         "image_id": "1a41339ece1846eda6a924cdb4c417dd",
-        "objects": [
-            "hallway"
-        ]
+        "objects": {
+            "counter":["3.0"]
+            }
     },
     {
         "new_id": "PIC32",
@@ -624,10 +555,7 @@
             "d65b6505904448d1940e679c9a098047"
         ],
         "image_id": "701f7128272a4bb2acd9dbd89b5cdf6f",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC33",
@@ -642,10 +570,7 @@
             "5b9b2794954e4694a45fc424a8643081"
         ],
         "image_id": "902e65564f81489687878425d9b3cb55",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC34",
@@ -660,10 +585,7 @@
             "701f7128272a4bb2acd9dbd89b5cdf6f"
         ],
         "image_id": "08115b08da534f1aafff2fa81fc73512",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC35",
@@ -678,10 +600,7 @@
             "701f7128272a4bb2acd9dbd89b5cdf6f"
         ],
         "image_id": "d65b6505904448d1940e679c9a098047",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC36",
@@ -699,10 +618,7 @@
             "50c241453dfd45c1ba95b5d7191982ef"
         ],
         "image_id": "e34dcf54d26a4a95869cc8a0c01cd2be",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC37",
@@ -716,10 +632,7 @@
             "1e86968849944444b66d9537efb5da9e"
         ],
         "image_id": "e0ce09f0178c48e2bbe649d2bf659702",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC38",
@@ -737,10 +650,7 @@
             "50c241453dfd45c1ba95b5d7191982ef"
         ],
         "image_id": "8a0f2f1a8ea441658501561e5dc34a3e",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC39",
@@ -756,10 +666,7 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "50c241453dfd45c1ba95b5d7191982ef",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC40",
@@ -776,10 +683,7 @@
             "c8112f69d34d476fbb29e6b3909deba2"
         ],
         "image_id": "b2e9278f9b8f4661abcb0446d2cbb98e",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC41",
@@ -796,10 +700,7 @@
             "b2e9278f9b8f4661abcb0446d2cbb98e"
         ],
         "image_id": "c8112f69d34d476fbb29e6b3909deba2",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC42",
@@ -814,10 +715,7 @@
             "c341c46acf7044d1a712d622cbc94a27"
         ],
         "image_id": "8ccf449f599a4cd88648e1d0ff39fdd0",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC43",
@@ -832,10 +730,7 @@
             "db145474a5fa476d95c2cc7f09e7c83a"
         ],
         "image_id": "5b9b2794954e4694a45fc424a8643081",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC44",
@@ -850,10 +745,7 @@
             "194bef4cbba641dc9860ba7f43a0c16a"
         ],
         "image_id": "5efaa5e4a30e481f9dadc1bac5e56a21",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC45",
@@ -869,10 +761,7 @@
             "5efaa5e4a30e481f9dadc1bac5e56a21"
         ],
         "image_id": "194bef4cbba641dc9860ba7f43a0c16a",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     },
     {
         "new_id": "PIC46",
@@ -889,10 +778,7 @@
             "1a41339ece1846eda6a924cdb4c417dd"
         ],
         "image_id": "abe20dd6e5194f579dfc6b63a612c150",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects":{}
     },
     {
         "new_id": "PIC47",
@@ -905,9 +791,6 @@
             "5b9b2794954e4694a45fc424a8643081"
         ],
         "image_id": "db145474a5fa476d95c2cc7f09e7c83a",
-        "objects": [
-            "something1",
-            "something2"
-        ]
+        "objects": {}
     }
 ]
