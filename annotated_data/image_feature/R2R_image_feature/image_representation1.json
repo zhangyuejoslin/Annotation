@@ -106,7 +106,7 @@
         ],
         "image_id": "da5fa65c13e643719a20cbb818c9a85d",
         "objects":
-            {"hallway":["3.0"]}
+            {"hallway":"3.0"}
 
     },
     {
@@ -739,7 +739,8 @@
         ],
         "image_id": "5b9b2794954e4694a45fc424a8643081",
         "objects": {
-            "sitting area": "3.0"
+            "sitting area": "3.0",
+            "television": "3.0"
         }
     },
     {
@@ -803,7 +804,8 @@
         "image_id": "db145474a5fa476d95c2cc7f09e7c83a",
         "objects": {
             "bed": "3.0",
-            "sitting area": "3.0"
+            "sitting area": "3.0",
+            "television": "3.0"
         }
     }
 ]
