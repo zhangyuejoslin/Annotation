@@ -15,7 +15,7 @@
         "objects": {
         "large picture": ["1.5","3.0"],
         "painting of the mermaid":["1.5","3.0"],
-        "counter":"1.5"
+        "counter": ["1.5"]
     }
     },
     {
@@ -52,6 +52,9 @@
         ],
         "image_id": "51857544c192476faebf212acb1b3d90",
         "objects": {
+            "sitting area":"3.0",
+            "bathroom": "3.0",
+            "door": ["3.0","1.5"]
         }
     },
     {
@@ -279,7 +282,9 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "1e86968849944444b66d9537efb5da9e",
-        "objects": {}
+        "objects": {
+            "bathroom":"1.5"
+        }
     },
     {
         "new_id": "PIC17",
@@ -497,7 +502,8 @@
             "8a0f2f1a8ea441658501561e5dc34a3e"
         ],
         "image_id": "23ec8bbec8eb40478411cba2e55b732e",
-        "objects": {}
+        "objects": {
+        }
     },
     {
         "new_id": "PIC30",
@@ -570,7 +576,9 @@
             "5b9b2794954e4694a45fc424a8643081"
         ],
         "image_id": "902e65564f81489687878425d9b3cb55",
-        "objects": {}
+        "objects": {
+            "sitting area": "3.0"
+        }
     },
     {
         "new_id": "PIC34",
@@ -730,7 +738,9 @@
             "db145474a5fa476d95c2cc7f09e7c83a"
         ],
         "image_id": "5b9b2794954e4694a45fc424a8643081",
-        "objects": {}
+        "objects": {
+            "sitting area": "3.0"
+        }
     },
     {
         "new_id": "PIC44",
@@ -791,6 +801,9 @@
             "5b9b2794954e4694a45fc424a8643081"
         ],
         "image_id": "db145474a5fa476d95c2cc7f09e7c83a",
-        "objects": {}
+        "objects": {
+            "bed": "3.0",
+            "sitting area": "3.0"
+        }
     }
 ]
