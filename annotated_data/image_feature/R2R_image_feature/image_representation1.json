@@ -106,7 +106,8 @@
         ],
         "image_id": "da5fa65c13e643719a20cbb818c9a85d",
         "objects":
-            {"hallway":"3.0"}
+            {"hallway":"2.25",
+            "glass table": "4.99"}
 
     },
     {
@@ -154,8 +155,8 @@
         ],
         "image_id": "08c774f20c984008882da2b8547850eb",
         "objects": {
-        "glass table": ["1.5"],
-        "counter":["1.5"]
+        "glass table": ["1.55"],
+        "counter":["1.55"]
     }
     },
     {
@@ -283,7 +284,7 @@
         ],
         "image_id": "1e86968849944444b66d9537efb5da9e",
         "objects": {
-            "bathroom":"1.5"
+            "bathroom":"2.71"
         }
     },
     {
@@ -301,10 +302,10 @@
         ],
         "image_id": "5e9f4f8654574e699480e90ecdd150c8",
         "objects": {
-            "chair": ["1.5"],
-            "bar": ["1.5"],
+            "chair": ["1.65"],
+            "bar": ["1.65"],
             "dining room table": ["1.5"],
-            "counter": ["1.5"]
+            "counter": ["1.65"]
         }
     },
     {
@@ -368,7 +369,10 @@
             "194bef4cbba641dc9860ba7f43a0c16a"
         ],
         "image_id": "ee59d6b5e5da4def9fe85a8ba94ecf25",
-        "objects": {}
+        "objects": {
+            "glass table": "5.5",
+            "dining room": "5.5"
+        }
     },
     {
         "new_id": "PIC22",
@@ -401,10 +405,10 @@
         ],
         "image_id": "77a1a11978b04e9cbf74914c98578ab8",
         "objects": {
-            "chair":["1.5"],
-            "bar": ["1.5"],
+            "chair":["1.55"],
+            "bar": ["1.55"],
             "dining room table": ["1.5"],
-            "counter": ["1.5"]
+            "counter": ["1.55"]
         }
     },
     {
@@ -519,10 +523,10 @@
         ],
         "image_id": "b185432bf33645aca813ac2a961b4140",
         "objects": {
-            "chair": ["1.5"],
-            "bar": ["1.5"],
+            "chair": ["1.6"],
+            "bar": ["1.6"],
             "dining room table":["1.5"],
-            "counter": ["1.5"]
+            "counter": ["1.6"]
         }
     },
     {
@@ -544,7 +548,10 @@
         ],
         "image_id": "1a41339ece1846eda6a924cdb4c417dd",
         "objects": {
-            "counter":["3.0"]
+            "counter":["3.0"],
+            "table" : "5.7",
+            "glass wall": "5.7"
+
             }
     },
     {
@@ -577,7 +584,8 @@
         ],
         "image_id": "902e65564f81489687878425d9b3cb55",
         "objects": {
-            "sitting area": "3.0"
+            "sitting area": "3.17",
+            "door": "3.17"
         }
     },
     {
@@ -739,7 +747,7 @@
         ],
         "image_id": "5b9b2794954e4694a45fc424a8643081",
         "objects": {
-            "sitting area": "3.0",
+            "sitting area": "3.37",
             "television": "3.0"
         }
     },
@@ -804,7 +812,7 @@
         "image_id": "db145474a5fa476d95c2cc7f09e7c83a",
         "objects": {
             "bed": "3.0",
-            "sitting area": "3.0",
+            "sitting area": "3.37",
             "television": "3.0"
         }
     }
