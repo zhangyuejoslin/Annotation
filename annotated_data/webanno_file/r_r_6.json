@@ -1,0 +1,167 @@
+{"_context" : {
+    "_types" : {
+      "DocumentMetaData" : {
+        "_feature_types" : {"sofa" : "_ref" } },
+      "FSArray" : { },
+      "Sentence" : {
+        "_feature_types" : {"sofa" : "_ref" } },
+      "Sofa" : {
+        "_feature_types" : {"sofaArray" : "_ref" } },
+      "Spatial_role_relation" : {
+        "_feature_types" : {"sofa" : "_ref",  "Dependent" : "_ref",  "Governor" : "_ref" } },
+      "Spatial_roles" : {
+        "_feature_types" : {"sofa" : "_ref",  "properties" : "_ref",  "spatial_entity" : "_ref" } },
+      "Spatial_rolesPropertiesLink" : {
+        "_feature_types" : {"target" : "_ref" } },
+      "Spatial_rolesSpatial_entityLink" : {
+        "_feature_types" : {"target" : "_ref" } },
+      "TagsetDescription" : {
+        "_feature_types" : {"sofa" : "_ref",  "tags" : "_ref" } },
+      "Token" : {
+        "_feature_types" : {"sofa" : "_ref",  "parent" : "_ref",  "lemma" : "_ref",  "stem" : "_ref",  "pos" : "_ref",  "morph" : "_ref",  "form" : "_ref" } },
+      "DocumentAnnotation" : {
+        "_feature_types" : {"sofa" : "_ref" },
+        "_subtypes" : ["DocumentMetaData" ] },
+      "Annotation" : {
+        "_feature_types" : {"sofa" : "_ref" },
+        "_subtypes" : ["DocumentAnnotation",  "Sentence",  "Spatial_role_relation",  "Spatial_roles",  "TagsetDescription",  "Token" ] },
+      "AnnotationBase" : {
+        "_feature_types" : {"sofa" : "_ref" },
+        "_subtypes" : ["Annotation" ] },
+      "TOP" : {
+        "_subtypes" : ["AnnotationBase",  "ArrayBase",  "Sofa",  "Spatial_rolesPropertiesLink",  "Spatial_rolesSpatial_entityLink" ] },
+      "ArrayBase" : {
+        "_subtypes" : ["FSArray" ] } } },
+  "_views" : {
+    "_InitialView" : {
+      "DocumentMetaData" : [
+        {"sofa" : 12,  "end" : 259,  "language" : "x-unspecified",  "documentTitle" : "r_r_6.txt",  "documentId" : "admin",  "documentUri" : "file:/Users/zhangyue/.webanno/repository/project/4/document/112/source/admin",  "collectionId" : "file:/Users/zhangyue/.webanno/repository/project/4/document/112/source/",  "documentBaseUri" : "file:/Users/zhangyue/.webanno/repository/project/4/document/112/source/",  "isLastSegment" : false } ],
+      "TagsetDescription" : [
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.syntax.type.dependency.Dependency",  "name" : "UD Universal Dependencies",  "input" : false },
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity",  "name" : "Named Entity tags",  "input" : false },
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.transform.type.SofaChangeAnnotation",  "name" : "Operation",  "input" : false },
+        {"sofa" : 12,  "layer" : "de.tudarmstadt.ukp.dkpro.core.api.lexmorph.type.pos.POS",  "name" : "UD Universal POS tags",  "input" : false },
+        {"sofa" : 12,  "layer" : "webanno.custom.Spatial_role_relation",  "name" : "viewer",  "input" : false },
+        {"sofa" : 12,  "layer" : "webanno.custom.Spatial_roles",  "name" : "spatial_indicator",  "input" : false } ],
+      "Sentence" : [
+        {"sofa" : 12,  "end" : 36 },
+        {"sofa" : 12,  "begin" : 38,  "end" : 67 },
+        {"sofa" : 12,  "begin" : 68,  "end" : 115 },
+        {"sofa" : 12,  "begin" : 117,  "end" : 176 },
+        {"sofa" : 12,  "begin" : 177,  "end" : 259 } ],
+      "Token" : [
+        {"sofa" : 12,  "end" : 4 },
+        {"sofa" : 12,  "begin" : 5,  "end" : 11 },
+        {"sofa" : 12,  "begin" : 12,  "end" : 15 },
+        {"sofa" : 12,  "begin" : 16,  "end" : 21 },
+        {"sofa" : 12,  "begin" : 22,  "end" : 25 },
+        {"sofa" : 12,  "begin" : 26,  "end" : 30 },
+        {"sofa" : 12,  "begin" : 31,  "end" : 35 },
+        {"sofa" : 12,  "begin" : 35,  "end" : 36 },
+        {"sofa" : 12,  "begin" : 38,  "end" : 42 },
+        {"sofa" : 12,  "begin" : 43,  "end" : 49 },
+        {"sofa" : 12,  "begin" : 50,  "end" : 53 },
+        {"sofa" : 12,  "begin" : 54,  "end" : 60 },
+        {"sofa" : 12,  "begin" : 61,  "end" : 66 },
+        {"sofa" : 12,  "begin" : 66,  "end" : 67 },
+        {"sofa" : 12,  "begin" : 68,  "end" : 72 },
+        {"sofa" : 12,  "begin" : 73,  "end" : 79 },
+        {"sofa" : 12,  "begin" : 80,  "end" : 83 },
+        {"sofa" : 12,  "begin" : 84,  "end" : 88 },
+        {"sofa" : 12,  "begin" : 89,  "end" : 91 },
+        {"sofa" : 12,  "begin" : 92,  "end" : 95 },
+        {"sofa" : 12,  "begin" : 96,  "end" : 100 },
+        {"sofa" : 12,  "begin" : 101,  "end" : 104 },
+        {"sofa" : 12,  "begin" : 105,  "end" : 109 },
+        {"sofa" : 12,  "begin" : 110,  "end" : 114 },
+        {"sofa" : 12,  "begin" : 114,  "end" : 115 },
+        {"sofa" : 12,  "begin" : 117,  "end" : 121 },
+        {"sofa" : 12,  "begin" : 122,  "end" : 126 },
+        {"sofa" : 12,  "begin" : 127,  "end" : 130 },
+        {"sofa" : 12,  "begin" : 131,  "end" : 137 },
+        {"sofa" : 12,  "begin" : 138,  "end" : 142 },
+        {"sofa" : 12,  "begin" : 143,  "end" : 147 },
+        {"sofa" : 12,  "begin" : 148,  "end" : 151 },
+        {"sofa" : 12,  "begin" : 152,  "end" : 157 },
+        {"sofa" : 12,  "begin" : 158,  "end" : 162 },
+        {"sofa" : 12,  "begin" : 163,  "end" : 165 },
+        {"sofa" : 12,  "begin" : 166,  "end" : 169 },
+        {"sofa" : 12,  "begin" : 170,  "end" : 175 },
+        {"sofa" : 12,  "begin" : 175,  "end" : 176 },
+        {"sofa" : 12,  "begin" : 177,  "end" : 179 },
+        {"sofa" : 12,  "begin" : 180,  "end" : 188 },
+        {"sofa" : 12,  "begin" : 189,  "end" : 195 },
+        {"sofa" : 12,  "begin" : 196,  "end" : 199 },
+        {"sofa" : 12,  "begin" : 200,  "end" : 205 },
+        {"sofa" : 12,  "begin" : 205,  "end" : 206 },
+        {"sofa" : 12,  "begin" : 207,  "end" : 211 },
+        {"sofa" : 12,  "begin" : 212,  "end" : 216 },
+        {"sofa" : 12,  "begin" : 217,  "end" : 220 },
+        {"sofa" : 12,  "begin" : 221,  "end" : 223 },
+        {"sofa" : 12,  "begin" : 224,  "end" : 232 },
+        {"sofa" : 12,  "begin" : 233,  "end" : 236 },
+        {"sofa" : 12,  "begin" : 237,  "end" : 241 },
+        {"sofa" : 12,  "begin" : 242,  "end" : 246 },
+        {"sofa" : 12,  "begin" : 247,  "end" : 250 },
+        {"sofa" : 12,  "begin" : 251,  "end" : 258 },
+        {"sofa" : 12,  "begin" : 258,  "end" : 259 } ],
+      "Spatial_role_relation" : [
+        {"sofa" : 12,  "begin" : 16,  "end" : 21,  "Dependent" : 785,  "Governor" : 759,  "Motion" : "Forward",  "Steps" : "step1" },
+        {"sofa" : 12,  "begin" : 26,  "end" : 35,  "Dependent" : 819,  "Governor" : 832,  "Motion" : "Left",  "Steps" : "step2" },
+        {"sofa" : 12,  "begin" : 54,  "end" : 66,  "Dependent" : 884,  "Governor" : 858,  "Motion" : "Stop",  "Steps" : "step3" },
+        {"sofa" : 12,  "begin" : 96,  "end" : 100,  "Dependent" : 944,  "Governor" : 918,  "Motion" : "Forward",  "Steps" : "step1" },
+        {"sofa" : 12,  "begin" : 105,  "end" : 114,  "Dependent" : 995,  "Governor" : 1008,  "Motion" : "Left",  "Steps" : "step2" },
+        {"sofa" : 12,  "begin" : 131,  "end" : 147,  "Dependent" : 1060,  "Governor" : 1034,  "Motion" : "Forward",  "Steps" : "step3" },
+        {"sofa" : 12,  "begin" : 170,  "end" : 175,  "Dependent" : 1120,  "Governor" : 1094,  "Motion" : "Stop",  "Steps" : "step4" },
+        {"sofa" : 12,  "begin" : 200,  "end" : 205,  "Dependent" : 1180,  "Governor" : 1154,  "Motion" : "Forward",  "Steps" : "step1" },
+        {"sofa" : 12,  "begin" : 207,  "end" : 216,  "Dependent" : 1214,  "Governor" : 1227,  "Motion" : "Left",  "Steps" : "step2" },
+        {"sofa" : 12,  "begin" : 221,  "end" : 232,  "Dependent" : 1253,  "Governor" : 1266,  "Motion" : "Forward",  "Steps" : "step3" },
+        {"sofa" : 12,  "begin" : 251,  "end" : 258,  "Dependent" : 1318,  "Governor" : 1292,  "Motion" : "Stop",  "Steps" : "step4" } ],
+      "Spatial_roles" : [759,  772,  785,  819,  832,  858,  871,  884,  918,  931,
+        {"sofa" : 12,  "begin" : 80,  "end" : 91,  "properties" : [
+            {"_type" : "Spatial_rolesPropertiesLink",  "role" : "orientation",  "target" : 944 } ],  "spatial_entity" : [ ] },  944,  995,  1008,  1034,  1047,  1060,  1094,  1107,  1120,  1154,  1167,  1180,  1214,  1227,  1253,  1266,  1292,  1305,  1318 ] } },
+  "_referenced_fss" : {
+    "12" : {"_type" : "Sofa",  "sofaNum" : 1,  "sofaID" : "_InitialView",  "mimeType" : "text",  "sofaString" : "Walk behind the couch and turn left.  Stop beside the middle stool.\nWalk behind the back of the sofa and turn left.  walk into the dining room area and stand next to the chair.\nGo straight passed the couch, turn left and go straight and wait near the counter." },
+    "759" : {"_type" : "Spatial_roles",  "sofa" : 12,  "end" : 4,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "772" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 5,  "end" : 11,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "871" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 43,  "end" : 49,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "858" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 38,  "end" : 42,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "944" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 96,  "end" : 100,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 918 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 931 } ] },
+    "918" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 68,  "end" : 72,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "931" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 73,  "end" : 79,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1034" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 117,  "end" : 121,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1047" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 122,  "end" : 126,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1094" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 152,  "end" : 157,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1107" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 158,  "end" : 165,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1167" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 189,  "end" : 195,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "1154" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 177,  "end" : 188,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1292" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 237,  "end" : 241,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1305" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 242,  "end" : 246,  "properties" : [ ],  "spatial_entity" : [ ],  "spatial_indicator" : "spatial_indicator" },
+    "785" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 16,  "end" : 21,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 759 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 772 } ] },
+    "819" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 26,  "end" : 35,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "832" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 26,  "end" : 35,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "884" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 54,  "end" : 66,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 871 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 858 } ] },
+    "995" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 105,  "end" : 114,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1008" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 105,  "end" : 114,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1060" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 131,  "end" : 147,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1034 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1047 } ] },
+    "1120" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 170,  "end" : 175,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1094 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1107 } ] },
+    "1180" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 200,  "end" : 205,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1167 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1154 } ] },
+    "1214" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 207,  "end" : 216,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1227" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 207,  "end" : 216,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1253" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 221,  "end" : 232,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1266" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 221,  "end" : 232,  "motion_indicator" : "motion_indicator",  "properties" : [ ],  "spatial_entity" : [ ] },
+    "1318" : {"_type" : "Spatial_roles",  "sofa" : 12,  "begin" : 251,  "end" : 258,  "properties" : [ ],  "spatial_entity" : [
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1292 },
+        {"_type" : "Spatial_rolesSpatial_entityLink",  "role" : "landmark",  "target" : 1305 } ] } } }
