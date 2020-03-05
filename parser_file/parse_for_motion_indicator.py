@@ -101,7 +101,6 @@ def check_property(property_list, target_num, dictionary):
             each_property_list.append((property[1][0], tokenindex_to_text(dictionary,property[1][1])))
     return each_property_list
 
-
 def get_configuration_type(relation):
     if "Motions" in relation.keys():
         return "Motions:"+relation['Motions']
@@ -113,11 +112,26 @@ def get_configuration_type(relation):
         return "Direction:" + relation['Direction']
 
 
+def format_representation(motion_indicator, spatial_indicator, trajector, landmark, config_index, relation, steps):
+    each_configuration ={}
+    each_configuration['spatial_entity'] = {}
+    if motion_indicator:
+        each_configuration['spatial_entity']['SPM'] = motion_indicator
+    if trajector:
+        each_configuration['spatial_entity']['SPT'] = trajector
+        each_configuration['spatial_entity']['SPI'] = spatial_indicator
+        each_configuration['spatial_entity']['SPL'] = landmark
+    each_configuration['id'] = str(config_index)
+    each_configuration['type'] = relation
+    each_configuration['distance'] = "close"
+    each_configuration['step'] = steps
+    return each_configuration
 
 def form_representation_generation(each_element):
     all_configurations = []
     for sentence_index, sentence_text, token_dictionary, fss, spatial_roles, spatial_relations in each_element:
         Configuration = {}
+        configure_list = []
         element_index = 1
         for relation in spatial_relations:
              SPI = []
@@ -156,31 +170,50 @@ def form_representation_generation(each_element):
                          temp_spi['index'] = (fss[str(spi)]["begin"],fss[str(spi)]["end"])
                          SPI.append(temp_spi)
              # writhe formal representation
-             Configuration['Config'+str(element_index)] = {}
-             Configuration['Config'+str(element_index)]['spaital_entity'] = {}
-             Configuration['Config'+str(element_index)]['type'] = get_configuration_type(relation)
-             Configuration['Config'+str(element_index)]['step'] = relation.get('Steps')
+             each_configuration = {}
+             each_configuration['spatial_entity'] = {}
+             each_configuration['type'] = get_configuration_type(relation)
+             each_configuration['distance'] = "close"
+             each_configuration['step'] = relation.get('Steps')
+             each_configuration['id'] = str(element_index)
              if SPM:
-                Configuration['Config'+str(element_index)]['spaital_entity']['SPM' + str(element_index)] = SPM
+                each_configuration['spatial_entity']['SPM'] = SPM
              if SPT:
-                Configuration['Config'+str(element_index)]['spaital_entity']['SPT' + str(element_index)] = SPT
+                each_configuration['spatial_entity']['SPT'] = SPT
              if len(SPI) == 1:
-                 Configuration['Config'+str(element_index)]['spaital_entity']['SPI'+str(element_index)] = SPI[0]
+                each_configuration['spatial_entity']['SPI'] = SPI[0]
              if len(SPL) == 1:
-                 Configuration['Config'+str(element_index)]['spaital_entity']['SPL'+str(element_index)] = SPL[0]
+                each_configuration['spatial_entity']['SPL'] = SPL[0]
+             configure_list.append(each_configuration)
              element_index += 1
+        Configuration['config'] = configure_list
         all_configurations.append(Configuration)
     return all_configurations
 
+        #      Configuration['Config'+str(element_index)] = {}
+        #      Configuration['Config'+str(element_index)]['spatial_entity'] = {}
+        #      Configuration['Config'+str(element_index)]['type'] = get_configuration_type(relation)
+        #      Configuration['Config' + str(element_index)]['distance'] = "close"
+        #      Configuration['Config'+str(element_index)]['step'] = relation.get('Steps')
+        #      if SPM:
+        #         Configuration['Config'+str(element_index)]['spatial_entity']['SPM' + str(element_index)] = SPM
+        #      if SPT:
+        #         Configuration['Config'+str(element_index)]['spatial_entity']['SPT' + str(element_index)] = SPT
+        #      if len(SPI) == 1:
+        #          Configuration['Config'+str(element_index)]['spatial_entity']['SPI'+str(element_index)] = SPI[0]
+        #      if len(SPL) == 1:
+        #          Configuration['Config'+str(element_index)]['spatial_entity']['SPL'+str(element_index)] = SPL[0]
+        #      element_index += 1
+        # all_configurations.append(Configuration)
+    # return all_configurations
+
+
 if __name__ == '__main__':
-        with open("../annotated_data/webanno_file/r_r_1.json", 'r') as load_f:
+        with open("../annotated_data/webanno_file/R2R/r_r_9.json", 'r') as load_f:
             load_dict = json.load(load_f)
-        with open("../annotated_data/formal_expression_for_r2r/r2r_form1.json", "w") as f:
+
+        with open("../annotated_data/formal_expression_for_r2r_test/r2r_form9.json", "w") as f:
             for item in form_representation_generation(parsing(load_dict)):
                 f.write(json.dumps(item))
                 f.write(',')
                 f.write('\n')
-
-
-
-

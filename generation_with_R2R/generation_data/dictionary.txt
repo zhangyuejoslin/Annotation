@@ -6,6 +6,7 @@ go straight
 go up the stairs
 go through the
 go to the
+head straight
 pass the
 passing the
 walk down the stairs

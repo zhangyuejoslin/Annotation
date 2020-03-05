@@ -125,7 +125,7 @@ def form_representation_generation(each_sentence):
 
 
 if __name__ == '__main__':
-    with open("../annotated_data/webanno_file/NLVR4.json", 'r') as load_f:
+    with open("../annotated_data/webanno_file/NLVR/NLVR4.json", 'r') as load_f:
         load_dict = json.load(load_f)
     with open("../annotated_data/formal_expression_for_NLVR/formal_expression4.json", "w") as f:
         for sentence in parsing(load_dict):

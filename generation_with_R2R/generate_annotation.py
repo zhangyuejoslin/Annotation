@@ -1,4 +1,5 @@
 import stanfordnlp
+import json
 
 with open("generation_data/generation_file1.txt") as f_text:
     sentence = f_text.read().split('\n')
@@ -9,6 +10,10 @@ with open("generation_data/stop_word.txt") as f_stop_word:
 
 stanfordnlp.download('en')
 nlp = stanfordnlp.Pipeline()
+left_vocabulary = ["turn left"]
+right_vocabulary = ["turn right"]
+close_distance = ['to', "into"]
+far_distance = ['pass', "past"]
 
 def post_processing_sentence(sentence_list):
     def func(sl):
@@ -57,6 +62,8 @@ def get_motion_spatial_indicator(text_list, tag_list):
         if each_tag == "root":
             if "advmod" in tag_list and tag_list[tag_list.index(each_tag)+1] == "advmod":
                 motion_indicator = text_list[tag_list.index(each_tag)] + " " + text_list[tag_list.index(each_tag)+1]
+            elif "xcomp" in tag_list and tag_list[tag_list.index(each_tag)+1] == "xcomp":
+                motion_indicator = text_list[tag_list.index(each_tag)] + " " + text_list[tag_list.index(each_tag) + 1]
             else:
                 motion_indicator = text_list[tag_list.index(each_tag)]
         elif "case" in each_tag and each_tag == "case":
@@ -65,31 +72,41 @@ def get_motion_spatial_indicator(text_list, tag_list):
             landmark = " ".join(text_list[tag_list.index(each_tag)+1:])
     return motion_indicator, spatial_indicator, landmark
 
-def form_expression(motion_indicator, spatial_indicator, landmark, index):
-    Configure = {}
-    Configure['Config'+str(index)] = {}
-    Configure['Config' + str(index)]['spatial_entity']= {}
+def form_expression(motion_indicator, spatial_indicator, landmark, config_index):
+    each_configuration ={}
+    each_configuration["spatial_entity"] = {}
     if motion_indicator:
-        Configure['Config' + str(index)]['spatial_entity']['SPM'+ str(index)] = motion_indicator
+        each_configuration["spatial_entity"]["SPM"] = {}
+        each_configuration["spatial_entity"]["SPM"]= motion_indicator
     if spatial_indicator:
-        Configure['Config' + str(index)]['spatial_entity']['SPI'+ str(index)] = spatial_indicator
+        each_configuration["spatial_entity"]["SPI"] = spatial_indicator
     if landmark:
-        Configure['Config' + str(index)]['spatial_entity']['SPL'+ str(index)] = landmark
-    return Configure
+        each_configuration["spatial_entity"]["SPL"] = landmark
 
+    each_configuration["id"] = str(config_index)
+    return each_configuration
 
 if __name__ == '__main__':
+    all_configurations = []
     for each_sentence in sentence:
         configuration = get_configuration(each_sentence)
-        index = 1
-        new_config = []
+        config_index = 1
+        config_list = []
+        config = {}
         for each_configuration in configuration:
             token_list, tag_list= get_dependency(each_configuration)
             motion_indicator, spatial_indicator, landmark = get_motion_spatial_indicator(token_list,tag_list)
-            format_expression = form_expression(motion_indicator, spatial_indicator, landmark, index)
-            new_config.append(format_expression)
-            index += 1
-        print(new_config)
+            format_expression = form_expression(motion_indicator, spatial_indicator, landmark, config_index)
+            config_list.append(format_expression)
+            config["Config"] = config_list
+            config_index += 1
+        all_configurations.append(config)
+    with open("generation_data/automatic_generation.json", "w") as f:
+        for item in all_configurations:
+                f.write(json.dumps(item))
+                f.write(',')
+                f.write('\n')
+
 
 
 
