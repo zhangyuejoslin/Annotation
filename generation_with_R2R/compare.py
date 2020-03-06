@@ -8,10 +8,33 @@ with open('generation_data/ground_truth.json') as f_ground_truth:
 
 identity = 1
 for each_automatic, each_ground_truth in zip(automatic, ground_truth):
-  if identity == 7:
+  # if identity == 1:
+    each_automatic_list = []
+    each_ground_truth_list = []
     for e_a in each_automatic['Config']:
-        print(e_a)
-  identity += 1
+        each_automatic_list.append(e_a['type'])
+       # each_automatic_list.append((e_a['type'], e_a['distance'], e_a['spatial_entity']['SPL']))
+    for e_g in each_ground_truth['config']:
+        if "Motion" in e_g['type']:
+            each_ground_truth_list.append(e_g['type'])
+            #if "SPL" in e_g['spatial_entity']:
+               # each_ground_truth_list.append(e_g['type'])
+                #each_ground_truth_list.append((e_g['type'], e_g['distance'], e_g["spatial_entity"]['SPL']['text']))
+           #else:
+
+                #each_ground_truth_list.append((e_g['type'], e_g['distance'], None))
+    print(each_automatic_list)
+    print(each_ground_truth_list)
+    if each_automatic_list == each_ground_truth_list:
+        print('True')
+    else:
+        print('False')
+    print('$$$$$$$')
+  # identity += 1
+
+
+
+  # identity += 1
   #       verify_spm = 0
   #       verify_spi = 0
   #       verify_spl = 0

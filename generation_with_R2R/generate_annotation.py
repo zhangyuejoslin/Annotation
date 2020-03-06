@@ -12,8 +12,9 @@ stanfordnlp.download('en')
 nlp = stanfordnlp.Pipeline()
 left_vocabulary = ["turn left"]
 right_vocabulary = ["turn right"]
+stop_vocabulary = ['stop', "wait"]
 close_distance = ['to', "into"]
-far_distance = ['pass', "past"]
+far_distance = ['pass',"passed","past","passing","through","exit","after",'across']
 
 def post_processing_sentence(sentence_list):
     def func(sl):
@@ -73,15 +74,41 @@ def get_motion_spatial_indicator(text_list, tag_list):
     return motion_indicator, spatial_indicator, landmark
 
 def form_expression(motion_indicator, spatial_indicator, landmark, config_index):
+
     each_configuration ={}
     each_configuration["spatial_entity"] = {}
     if motion_indicator:
-        each_configuration["spatial_entity"]["SPM"] = {}
         each_configuration["spatial_entity"]["SPM"]= motion_indicator
+        if motion_indicator in left_vocabulary:
+            each_configuration['type'] = "Motions:Left"
+        elif motion_indicator in right_vocabulary:
+            each_configuration['type'] = "Motions:Right"
+        elif motion_indicator in stop_vocabulary:
+            each_configuration['type'] = "Motions:Stop"
+        else:
+            each_configuration['type'] = "Motions:Forward"
+
     if spatial_indicator:
         each_configuration["spatial_entity"]["SPI"] = spatial_indicator
+        if spatial_indicator in close_distance:
+            each_configuration['distance'] = "close"
+        elif spatial_indicator in far_distance:
+            each_configuration['distance'] = "far"
+        else:
+            if motion_indicator in far_distance:
+                each_configuration['distance'] = "far"
+            else:
+                each_configuration['distance'] = None
+    else:
+        each_configuration["spatial_entity"]["SPI"] = None
+        if motion_indicator in far_distance:
+            each_configuration['distance'] = "far"
+        else:
+            each_configuration['distance'] = None
     if landmark:
         each_configuration["spatial_entity"]["SPL"] = landmark
+    else:
+        each_configuration["spatial_entity"]["SPL"] = None
 
     each_configuration["id"] = str(config_index)
     return each_configuration
